@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -11,5 +17,46 @@ html {
 }
 
 body {
-  
+  font-color: @grey--font;
+  font-size: @font-size;
+  font-family: @font-family;
+  background: #fff;
 }
+
+h2,
+h3 {
+  margin: 2em 0 1em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  @media(min-width: @screen--small) {
+    width: 90%;
+  }
+  @media(min-width: @screen--medium) {
+    width: 900px;
+  }
+  @media(min-width: @screen--big) {
+    width: 1180px;
+  }
+}
+
+.resume {
+  background: @grey--bkg;
+}
+
+.about {
+  height: 335px;
+  &__text {
+    padding: 60px 80px;
+    margin: 0 auto;
+    color: @grey--font;
+    font-size: @font-size;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+

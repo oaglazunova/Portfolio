@@ -1,3 +1,71 @@
 .page-header {
-  
 }
+
+.header-wrapper {
+  background: linear-gradient(to right, @green, @blue), url("http://us.123rf.com/450wm/pengyou91/pengyou911303/pengyou91130300166/18489756-china-lugu-lake-panorama.jpg") 50% 50%/cover no-repeat fixed;
+}
+
+.header--main {
+  width: 90%;
+  padding: 250px 0 0;
+  margin: 0 auto;
+  text-align: left;
+  color: #fff;
+  font-size: @font-size--h1;
+  font-weight: 100;
+  text-transform: uppercase;
+  height: 700px;
+  
+  @media(min-width: @screen--small) {
+      width: 90%;
+    }
+    @media(min-width: @screen--medium) {
+      width: 900px;
+    }
+    @media(min-width: @screen--big) {
+      width: 1180px;
+    }
+  
+  span {
+    font-size: @font-size--h2;
+    text-transform: none;
+    font-weight: 400;
+  }
+}
+
+.menu {
+  background: @grey--menu;
+  &__wrapper {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    
+    @media(min-width: @screen--small) {
+      width: 90%;
+    }
+    @media(min-width: @screen--medium) {
+      width: 900px;
+    }
+    @media(min-width: @screen--big) {
+      width: 1180px;
+    }
+  }
+  &__btn {
+    display: block;
+    padding: 20px 40px;
+    color: #fff;
+    font-size: @font-size--menu;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    &:hover {      
+    color: @green--decor;
+    }
+  }
+}
+

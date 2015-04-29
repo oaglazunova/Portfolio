@@ -449,7 +449,7 @@ th {
 	height: 6px;
 	margin: 0 3px;
 	display: inline-block;
-	background: #bec2c6;
+	background: grey;
 	border: 3px solid transparent;
 	vertical-align: top;
 	border-radius: 50%;
@@ -459,13 +459,19 @@ th {
 }
 
 .slider-style__btn:hover {
-	background: #7e868f;
+	background: grey;
 	background-clip: padding-box;
 }
 
 .slider-style__btn--active {
-	border: 3px solid #283645;
+	border: 3px solid #25b8d4;
 	background: transparent;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
 html {
@@ -478,6 +484,99 @@ html {
 	box-sizing: inherit;
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	font-color: #919191;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	background: #fff;
+}
+
+h2,
+h3 {
+	margin: 2em 0 1em;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.resume {
+	background: #f2f2f1;
+}
+
+.about {
+	height: 335px;
+}
+
+.about__text {
+	padding: 60px 80px;
+	margin: 0 auto;
+	color: #919191;
+	font-size: 18px;
+	line-height: 2em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.header-wrapper {
+	background: linear-gradient(to right, #3ed09b, #25b8d4), url("http://us.123rf.com/450wm/pengyou91/pengyou911303/pengyou91130300166/18489756-china-lugu-lake-panorama.jpg") 50% 50% / cover no-repeat fixed;
+}
+
+.header--main {
+	width: 90%;
+	padding: 250px 0 0;
+	margin: 0 auto;
+	text-align: left;
+	color: #fff;
+	font-size: 68px;
+	font-weight: 100;
+	text-transform: uppercase;
+	height: 700px;
+}
+
+.header--main span {
+	font-size: 28px;
+	text-transform: none;
+	font-weight: 400;
+}
+
+.menu {
+	background: #cacecf;
+}
+
+.menu__wrapper {
+	list-style: none;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.menu__btn {
+	display: block;
+	padding: 20px 40px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.menu__btn:hover {
+	color: #2ecc71;
 }
 
 .icon-twitter {
@@ -534,5 +633,53 @@ html {
 
 .icon-no {
 	background: url("../img/no.svg") no-repeat scroll 50% 50%;
+}
+
+@media (min-width: 700px) {
+
+.container {
+	width: 90%;
+}
+
+.header--main {
+	width: 90%;
+}
+
+.menu__wrapper {
+	width: 90%;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+.container {
+	width: 900px;
+}
+
+.header--main {
+	width: 900px;
+}
+
+.menu__wrapper {
+	width: 900px;
+}
+
+}
+
+@media (min-width: 1440px) {
+
+.container {
+	width: 1180px;
+}
+
+.header--main {
+	width: 1180px;
+}
+
+.menu__wrapper {
+	width: 1180px;
+}
+
 }
 

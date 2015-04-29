@@ -4,55 +4,214 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Olga Glazunova: Portfolio and  Resume</title>
+  <title>Ольга Глазунова: портфолио и резюме</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"> 
+-->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,900italic,700italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  
+
   <header class="page-header">
+    <div class="header-wrapper">
+      <h1 class="header--main">
+        Ольга Глазунова<br> 
+        <span>Вёрстка веб-страниц</span>
+      </h1>
+    </div>
+    <div class="menu">
+      <ul class="menu__wrapper">
+        <li>
+          <a class="menu__btn" href="#">Обо мне</a>
+        </li>
+        <li>
+          <a class="menu__btn" href="#">Навыки</a>
+        </li>
+        <li>
+          <a class="menu__btn" href="#">Резюме</a>
+        </li>
+        <li>
+          <a class="menu__btn" href="#">Портфолио</a>
+        </li>
+        <li>
+          <a class="menu__btn" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
   </header>
-  
-  
-  
+
+
+
   <div class="page-content">
-    
+
     <div class="about">
+      <div class="container">
+        <p class="about__text  text--large">Я начинающий верстальщик сайтов. Это мой красивый сайт. Мне нравится работать над разными проектами и воплощать идеи в реальность. Я сделала этот сайт в качестве тренировки в дизайне и вёрстке: это мой первый проект, самостоятельно разработанный с нуля. Меня увлекает дизайн и я планирую улучшать свои навыки в нём и дальше, но всё же свою карьеру я связываю с веб-программированием: в ближайших планах - подтянуть JavaScript до уровня “выше среднего” и начать изучать PHP.</p>
+      </div>
     </div>
-    
-    
-    
+
+
+
     <div class="skills">
+      <div class="container">
+        <h2 class="header__h2">Мои навыки</h2>
+        <p class="text">Я умею делать адаптивную вёрстку с адаптивной сеткой и графикой. Использую методологию БЭМ. Использую препроцессор LESS. Начальный уровень JavaScript. Photoshop - необходимвый уровень знаний для вёрстки и создания макетов, и немного больше (рисование текстур, ретушь и художественная обработка фото).</p>
+        <!--
+      HTML
+Familiarity of HTML syntax for multiple specifications, including HTML 5.
+Knowledge of the semantic meaning of all HTML elements.
+Familiarity with the semantic markup for display of lists, tabular data, forms, articles, etc.
+Knowledge at the level to be able to hand-code markup.
+Including media and images.
+
+CSS
+Specifying different CSS for various media, devices and displays.
+Best practices in CSS file organization and structure.
+Methods for including CSS inline, internal and external via linked style sheets.
+How to define, combine and group CSS selectors for HTML elements, ID, classes, pseudo classes, child or sibling.
+Syntax of CSS declarations, properties and attributes.
+CSS box model and methods for CSS positioning, absolute and relative.
+Knowledge of properties and attributes to control the display.
+Proficient with a CSS Preprocessor (LESS). 
+      
+Best practices
+Methods to ensure browser & device compatibility
+Methods for degrading gracefully for older browsers and displays.
+Methods to ensure accessibility.
+File compression techniques for improving speed.
+      
+JavaScript
+Knowledge of the operators, variables, datatypes, objects, properties and methods.
+Familiarity with control structures such as objects, functions, conditional statements, arrays, loops and expressions.
+Forms and regular expression validation and submitting data.
+Knowledge of how to apply logical operators and conditional statements.
+Knowledge of the DOM HTML objects and their properties.
+Event handling.
+Creating and controlling windows and dialogs.
+Processes for troubleshooting and debugging
+Familiarity with development and debugging tools for cross-browser issues.
+      
+jQuery
+Knowledge of how to employ the jQuery library for visual effects and event handling.
+-->
+      </div>
     </div>
-    
-    
-    
+
+
+
+    <div class="slider">
+      <div class="container">
+        <div class="slider__wrapper">
+          <div class="slider__slide slider__slide--1">
+            Адаптивность Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.
+          </div>
+          <div class="slider__slide slider__slide--2">
+            Кросс-браузерность
+          </div>
+          <!--
+      Built on WordPress
+Want to easily update your website after having it created? Have your website built & deployed on WordPress to make things easier
+      Mobile Design
+Have your app designed to look nice and with the highest standards of UI / UX
+-->
+        </div>
+      </div>
+    </div>
+
+
+
     <div class="resume">
-    </div>    
-    
-    
-    
+      <div class="container">
+        <h2 class="header--h2">Резюме</h2>
+        <p class="text">По ссылке ниже вы можете загрузить моё полное резюме:</p>
+        <a class="btn" href="#">Скачать резюме</a>
+      </div>
+    </div>
+
+
+
     <div class="education">
+      <div class="container">
+
+        <div class="education__uni">
+          <h2 class="header--h2">Образование</h2>
+          <p class="text">В 2003 году я закончила СПбГУ, получив степень бакалавра на кафедре прикладной и математической лингвистики. В 2005 году я получила в СПбГУ диплом магистра по специальности "Прикладная и математическая лингвистика".</p>
+        </div>
+
+        <div class="education__certificates">
+          <h3 class="header--h3">Продвинутый интенсив Создание веб-интерфейсов с помощью HTML и CSS </h3>
+          <p class="education__details"><a href="#">HTML Academy</a>, 2015</p>
+          <p class="text">В процессе обучения на интенсиве я активно использовала те инструменты, которыми должен владеть каждый верстальщик-профессионал: препроцессоры, GitHub, методологии, средства автоматизации.</p>
+          <a class="btn" href="#">сертификат</a>
+          <h3 class="header--h3">Создание веб-интерфейсов с помощью HTML и CSS</h3>
+          <p class="education__details">><a href="#">HTML Academy</a>, 2014</p>
+          <p class="text">На этих курсах я приобрела навыки для эффективного решения типовых профессиональных задач HTML-верстальщика: научилась создавать современные веб-интерфейсы, работать с живым кодом, использовать новейшие технологии. Полученные знания позволили мне существенно повысить свою эффективность: быстрее и точнее оценивать сложность задач, самостоятельно создавать посадочные страницы и т.д.</p>
+          <a class="btn" href="#">сертификат</a>
+        </div>
+      </div>
     </div>
-    
-    
-    
-    <div class="experience">
-    </div>
-    
-    
-    
+
+
+
     <div class="portfolio">
+      <div class="container">
+        <h2 class="header--h2">Портфолио</h2>
+        <p class="text">Мои последние работы по вёрстке</p>
+        <ul class="portfolio__examples">
+          <li>
+            <a class="portfolio__work" href="#"></a>
+            <h2 class="header--h2">Техномарт</h2>
+            <p class="text">Выпускной проект на курсах HTML Academy: интернет-магазин строительной техникики. Дизайн макета: Антон Глунанько. Вёрстка: Ольга Глазунова.</p>
+          </li>
+          <li>
+            <a class="portfolio__work" href="#"></a>
+            <h2 class="header--h2">PINK</h2>
+            <p class="text">Выпускной проект на курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и ретина-дисплеев. Дизайн макета: Антон Глунанько. Вёрстка: Ольга Глазунова.</p>
+          </li>
+          <li>
+            <a class="portfolio__work" href="#"></a>
+            <h2 class="header--h2">xxx</h2>
+            <p class="text">xxx</p>
+          </li>
+        </ul>
+      </div>
     </div>
-    
+
+
+
+    <div class="contacts">
+      <div class="container">
+        <div class="contacts__social">
+          <h2 class="header--h2">Контакты</h2>
+          <p class="text">Со мной можно связаться по почте, через Skype или в социальных сетях:</p>
+          <div class="contacts__btns">
+            <a class="btn-social  btn-social--em" href="#">e-mail</a>
+            <a class="btn-social  btn-social--sk" href="#">Skype</a>
+            <a class="btn-social  btn-social--fb" href="#">Facebook</a>
+            <a class="btn-social  btn-social--gh" href="#">GithHub</a>
+            <a class="btn-social  btn-social--cp" href="#">Codepen</a>
+          </div>
+        </div>
+        <div class="contacts__form">
+          <p class="text--large">Заинтересованы работать со мной? Расскажите о вашем предложении, и я вам отвечу:</p>
+          Имя: Ваш e-mail: Текст сообщения:
+          <a class="btn" href="#">Отправить</a>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
-  
-  
-  
+
   <footer class="page-footer">
+    <div class="container">
+      <p class="page-footer__design">This responsive web site has been designed, developed, and maintained by Roy Barber. It’s built with Jekyll, optimised for a fast page load, hosted on AWS and served via CloudFront. Current Average load is 0.4s.</p>
+      <p class="page-footer__copyright">© Copyright 2015</p>
+    </div>
   </footer>
-  
+
 </body>
-  
+
 </html>
