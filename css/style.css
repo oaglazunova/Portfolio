@@ -503,6 +503,15 @@ h3 {
 	margin: 0 auto;
 }
 
+.btn {
+	display: inline-block;
+	padding: 20px;
+	color: #2ecc71;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #2ecc71;
+}
+
 .resume {
 	background: #f2f2f1;
 }
@@ -519,6 +528,146 @@ h3 {
 	line-height: 2em;
 	text-align: center;
 	vertical-align: middle;
+}
+
+.slideshow__slider-wrapper {
+	display: block;
+	width: 100%;
+	margin: auto;
+	position: relative;
+}
+
+.slideshow__slider-wrapper input[type=radio] {
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	visibility: hidden;
+}
+
+.slideshow__slider {
+	overflow: hidden;
+	position: relative;
+}
+
+.slideshow__slider ul {
+	list-style: none;
+	width: 500%;
+	position: relative;
+	left: 0px;
+	transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slideshow__slide {
+	padding: 0 20px;
+	text-align: center;
+	position: relative;
+	width: 20%;
+	float: left;
+}
+
+.slider-paginator {
+	width: 200px;
+	height: 10px;
+	margin: 0 0 0 -100px;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+	bottom: -60px;
+}
+
+.slider-paginator label {
+	width: 6px;
+	height: 6px;
+	margin: 0 3px;
+	display: inline-block;
+	background: grey;
+	border: 3px solid transparent;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+	box-sizing: content-box;
+	background-clip: padding-box;
+}
+
+.slider-paginator label:hover {
+	background: grey;
+	background-clip: padding-box;
+}
+
+.slideshow__slider-wrapper input[type=radio]#button-1:checked ~ .slideshow-paginator > label[for=button-1] {
+	border: 3px solid #25b8d4;
+	background: transparent;
+}
+
+.slideshow__slider-wrapper input[type=radio]#button-2:checked ~ .slideshow-paginator > label[for=button-2] {
+	border: 3px solid #25b8d4;
+	background: transparent;
+}
+
+.slideshow__slider-wrapper input[type=radio]#button-3:checked ~ .slideshow-paginator > label[for=button-3] {
+	border: 3px solid #25b8d4;
+	background: transparent;
+}
+
+.slideshow__slider-wrapper input[type=radio]#button-1:checked ~ .slideshow__slider > ul {
+	left: 0;
+}
+
+.slideshow__slider-wrapper input[type=radio]#button-2:checked ~ .slideshow__slider > ul {
+	left: -100%;
+}
+
+.slideshow__slider-wrapper input[type=radio]#button-3:checked ~ .slideshow__slider > ul {
+	left: -200%;
+}
+
+label.arrows {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	display: none;
+	cursor: pointer;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	border: 3px #3ed09b;
+}
+
+label.arrows:hover {
+	border: 3px #25b8d4;
+}
+
+label.arrows:active {
+	margin-top: -23px;
+}
+
+input[type=radio]#button-1:checked ~ .arrows#arrow-2,
+input[type=radio]#button-2:checked ~ .arrows#arrow-3,
+input[type=radio]#button-3:checked ~ .arrows#arrow-1 {
+	right: -55px;
+	display: none;
+	border-style: solid solid none none;
+}
+
+input[type=radio]#button-2:checked ~ .arrows#arrow-1,
+input[type=radio]#button-3:checked ~ .arrows#arrow-2,
+input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
+	left: -55px;
+	display: none;
+	border-style: none none solid solid;
+}
+
+input[type=radio]#button-2:checked ~ .arrows#arrow-1 {
+	left: -19px;
+}
+
+input[type=radio]#button-3:checked ~ .arrows#arrow-2 {
+	left: -37px;
 }
 
 .header-wrapper {
@@ -641,6 +790,14 @@ h3 {
 	width: 90%;
 }
 
+.slideshow__slide {
+	padding: 0;
+}
+
+.slider-paginator {
+	bottom: -20px;
+}
+
 .header--main {
 	width: 90%;
 }
@@ -657,6 +814,26 @@ h3 {
 	width: 900px;
 }
 
+.slideshow__slider-wrapper {
+	width: 800px;
+}
+
+.slider-paginator {
+	display: none;
+}
+
+input[type=radio]#button-1:checked ~ .arrows#arrow-2,
+input[type=radio]#button-2:checked ~ .arrows#arrow-3,
+input[type=radio]#button-3:checked ~ .arrows#arrow-1 {
+	display: block;
+}
+
+input[type=radio]#button-2:checked ~ .arrows#arrow-1,
+input[type=radio]#button-3:checked ~ .arrows#arrow-2,
+input[type=radio]#button-1:checked ~ .arrows#arrow-3 {
+	display: block;
+}
+
 .header--main {
 	width: 900px;
 }
@@ -671,6 +848,10 @@ h3 {
 
 .container {
 	width: 1180px;
+}
+
+.slideshow__slider-wrapper {
+	width: 1000px;
 }
 
 .header--main {
