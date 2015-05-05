@@ -55,7 +55,7 @@
 
     <div class="skills">
       <div class="container">
-        <h2 class="header__h2">Мои навыки</h2>
+        <h2 class="header--h2">Навыки</h2>
         <p class="text">Я умею делать адаптивную вёрстку с адаптивной сеткой и графикой. Использую методологию БЭМ. Использую препроцессор LESS. Начальный уровень JavaScript. Photoshop - необходимвый уровень знаний для вёрстки и создания макетов, и немного больше (рисование текстур, ретушь и художественная обработка фото).</p>
         <!--
       HTML
@@ -95,73 +95,63 @@ Familiarity with development and debugging tools for cross-browser issues.
 jQuery
 Knowledge of how to employ the jQuery library for visual effects and event handling.
 -->
+
       </div>
     </div>
 
 
-<!--
-    <div class="slider">
-      <div class="container">
-        <div class="slider__wrapper">
-          <div class="slider__slide slider__slide--1">
-            Адаптивность Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.
-          </div>
-          <div class="slider__slide slider__slide--2">
-            Кросс-браузерность
-          </div>
-          
-      Built on WordPress
-Want to easily update your website after having it created? Have your website built & deployed on WordPress to make things easier
-      Mobile Design
-Have your app designed to look nice and with the highest standards of UI / UX
 
-        </div>
-      </div>
-    </div>
--->
-    
     <div class="slideshow">
       <div class="container">
-        <div class="slideshow__slider-wrapper">
-		
+        <div class="slideshow__wrapper">
+
           <input type="radio" id="button-1" name="controls" checked="checked" />
           <input type="radio" id="button-2" name="controls" />
           <input type="radio" id="button-3" name="controls" />
-          
+
           <div class="slider-paginator">
             <label for="button-1"></label>
             <label for="button-2"></label>
             <label for="button-3"></label>
           </div>
-          
+
           <label for="button-1" class="arrows" id="arrow-1">></label>
           <label for="button-2" class="arrows" id="arrow-2">></label>
           <label for="button-3" class="arrows" id="arrow-3">></label>
-          
+
           <div class="slideshow__slider">
 
             <ul>
-              <li class="slideshow__slide">
-                Адаптивность Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.
+              <li class="slideshow__slide  slide--1">
+               <div class="slideshow__text-block">             
+                <h3 class="header--h3">Адаптивность</h3> 
+                <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
+                </div>  
               </li>
-              <li class="slideshow__slide">
-                Кросс-браузерность
+              <li class="slideshow__slide  slide--2">
+               <div class="slideshow__text-block">
+                <h3 class="header--h3">Кросс-браузерность</h3>
+                <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
+                </div>
               </li>
-              <li class="slideshow__slide">
-                xxx
+              <li class="slideshow__slide  slide--3">
+               <div class="slideshow__text-block">
+                <h3 class="header--h3">xxx</h3>
+                <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    
+
 
 
     <div class="resume">
       <div class="container">
         <h2 class="header--h2">Резюме</h2>
-        <p class="text">По ссылке ниже вы можете загрузить моё полное резюме:</p>
+        <p class="text">По ссылке ниже вы можете загрузить моё полное резюме в формате PDF:</p>
         <a class="btn" href="#">Скачать резюме</a>
       </div>
     </div>
@@ -169,22 +159,22 @@ Have your app designed to look nice and with the highest standards of UI / UX
 
 
     <div class="education">
-      <div class="container">
-
-        <div class="education__uni">
-          <h2 class="header--h2">Образование</h2>
+      <div class="container  clearfix">        
+        <div class="education__uni">         
+         <h2 class="header--h2">Образование</h2>
           <p class="text">В 2003 году я закончила СПбГУ, получив степень бакалавра на кафедре прикладной и математической лингвистики. В 2005 году я получила в СПбГУ диплом магистра по специальности "Прикладная и математическая лингвистика".</p>
         </div>
 
         <div class="education__certificates">
-          <h3 class="header--h3">Продвинутый интенсив Создание веб-интерфейсов с помощью HTML и CSS </h3>
-          <p class="education__details"><a href="#">HTML Academy</a>, 2015</p>
+       <!--  <h2 class="header--h2">Дополнительное обучение</h2> -->
+          <h3 class="header--h3">Продвинутый интенсив: создание веб-интерфейсов с помощью HTML и CSS </h3>
+          <a class="btn--small" href="#">HTML Academy</a>
           <p class="text">В процессе обучения на интенсиве я активно использовала те инструменты, которыми должен владеть каждый верстальщик-профессионал: препроцессоры, GitHub, методологии, средства автоматизации.</p>
-          <a class="btn" href="#">сертификат</a>
+          <a class="btn" href="#">Просмотерть сертификат</a>
           <h3 class="header--h3">Создание веб-интерфейсов с помощью HTML и CSS</h3>
-          <p class="education__details">><a href="#">HTML Academy</a>, 2014</p>
+          <a class="btn--small" href="#">HTML Academy</a>
           <p class="text">На этих курсах я приобрела навыки для эффективного решения типовых профессиональных задач HTML-верстальщика: научилась создавать современные веб-интерфейсы, работать с живым кодом, использовать новейшие технологии. Полученные знания позволили мне существенно повысить свою эффективность: быстрее и точнее оценивать сложность задач, самостоятельно создавать посадочные страницы и т.д.</p>
-          <a class="btn" href="#">сертификат</a>
+          <a class="btn" href="#">Просмотерть сертификат</a>
         </div>
       </div>
     </div>
@@ -198,17 +188,17 @@ Have your app designed to look nice and with the highest standards of UI / UX
         <ul class="portfolio__examples">
           <li>
             <a class="portfolio__work" href="#"></a>
-            <h2 class="header--h2">Техномарт</h2>
+            <h3 class="header--h3">Техномарт</h3>
             <p class="text">Выпускной проект на курсах HTML Academy: интернет-магазин строительной техникики. Дизайн макета: Антон Глунанько. Вёрстка: Ольга Глазунова.</p>
           </li>
           <li>
             <a class="portfolio__work" href="#"></a>
-            <h2 class="header--h2">PINK</h2>
+            <h3 class="header--h3">PINK</h3>
             <p class="text">Выпускной проект на курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и ретина-дисплеев. Дизайн макета: Антон Глунанько. Вёрстка: Ольга Глазунова.</p>
           </li>
           <li>
             <a class="portfolio__work" href="#"></a>
-            <h2 class="header--h2">xxx</h2>
+            <h3 class="header--h3">xxx</h3>
             <p class="text">xxx</p>
           </li>
         </ul>
