@@ -468,97 +468,6 @@ th {
 	background: transparent;
 }
 
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-	margin: 0;
-	padding: 0;
-}
-
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-body {
-	font-color: #919191;
-	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
-	background: #fff;
-}
-
-.container {
-	width: 90%;
-	margin: 0 auto;
-	border: 1px solid transparent;
-}
-
-.btn {
-	display: inline-block;
-	padding: 15px;
-	margin: 0 0 2em;
-	color: #2ecc71;
-	font-size: 16px;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-decoration: none;
-	border: 1px solid #2ecc71;
-}
-
-.btn:hover {
-	color: #fff;
-	background: #2ecc71;
-}
-
-.btn:active {
-	color: #fff;
-	background: #cacecf;
-}
-
-.btn--small {
-	display: inline-block;
-	padding: 5px;
-	margin: 0 0 1em;
-	background: #2ecc71;
-	color: #fff;
-	font-size: 16px;
-	text-decoration: none;
-}
-
-.header--h2,
-.header--h3 {
-	margin: 2em 0 1em;
-	color: #566366;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.header--h2 {
-	font-size: 28px;
-}
-
-.header--h3 {
-	font-size: 18px;
-}
-
-.text {
-	padding: 0 0 2em;
-	color: #919191;
-	font-size: 16px;
-}
-
 .icon-twitter {
 	background: url("../img/twitter.svg") no-repeat scroll 50% 50%;
 }
@@ -615,12 +524,113 @@ body {
 	background: url("../img/no.svg") no-repeat scroll 50% 50%;
 }
 
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	font-color: #919191;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background: #fff;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid transparent;
+}
+
+.btn {
+	display: inline-block;
+	padding: 15px;
+	margin: 0 0 2em;
+	color: #00c853;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid #00c853;
+}
+
+.btn:hover {
+	color: #fff;
+	background: #00c853;
+}
+
+.btn:active {
+	color: #fff;
+	background: #cccccc;
+	border: 1px solid #cccccc;
+}
+
+.btn--small {
+	display: inline-block;
+	padding: 5px;
+	margin: 0 0 1em;
+	background: #00c853;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.btn--small:hover {
+	background: #0f9f03;
+}
+
+.btn--small:active {
+	background: #cccccc;
+}
+
+.header--h2,
+.header--h3 {
+	margin: 2em 0 1em;
+	color: #566366;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.header--h2 {
+	font-size: 28px;
+}
+
+.header--h3 {
+	font-size: 18px;
+}
+
+.text {
+	padding: 0 0 1em;
+	color: #919191;
+	font-size: 16px;
+}
+
 .page-header {
 	margin: 0 0 60px 0;
 }
 
 .header-wrapper {
-	background: linear-gradient(to right, #3ed09b, #25b8d4), url("http://us.123rf.com/450wm/pengyou91/pengyou911303/pengyou91130300166/18489756-china-lugu-lake-panorama.jpg") 50% 50% / cover no-repeat fixed;
+	background: url("../img/bkg.jpg") no-repeat;
+	background-size: 100%;
 }
 
 .header--main {
@@ -642,7 +652,7 @@ body {
 }
 
 .menu {
-	background: #cacecf;
+	background: #cccccc;
 }
 
 .menu__wrapper {
@@ -653,9 +663,9 @@ body {
 	-webkit-flex-wrap: nowrap;
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
-	-webkit-justify-content: flex-end;
-	-ms-flex-pack: end;
-	justify-content: flex-end;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -674,7 +684,11 @@ body {
 }
 
 .menu__btn:hover {
-	color: #2ecc71;
+	background: #919191;
+}
+
+.menu__btn:active {
+	background: #cccccc;
 }
 
 .about {
@@ -685,7 +699,7 @@ body {
 	padding: 0 80px;
 	margin: 0 auto;
 	color: #919191;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 2em;
 	text-align: center;
 	vertical-align: middle;
@@ -693,6 +707,10 @@ body {
 
 .skills {
 	margin: 0 0 60px 0;
+}
+
+.skills .text {
+	line-height: 1.8em;
 }
 
 .slideshow {
@@ -869,8 +887,26 @@ input[type=radio]#button-3:checked ~ .arrows#arrow-2 {
 	transform: translateX(-80px);
 }
 
-.education {
+.personal {
 	margin: 0 0 60px 0;
+}
+
+.personal__certificates {
+	width: 45%;
+	float: left;
+}
+
+.personal__experience {
+	width: 45%;
+	float: right;
+}
+
+.portfolio {
+	background: linear-gradient(to right, #3ed09b, #25b8d4);
+}
+
+.contacts {
+	background: #f2f2f1;
 }
 
 @media (min-width: 700px) {

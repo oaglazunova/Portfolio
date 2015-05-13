@@ -3,7 +3,9 @@
 }
 
 .header-wrapper {
-  background: linear-gradient(to right, @green, @blue), url("http://us.123rf.com/450wm/pengyou91/pengyou911303/pengyou91130300166/18489756-china-lugu-lake-panorama.jpg") 50% 50%/cover no-repeat fixed;
+ // background: linear-gradient(to right, @green, @blue), url("http://us.123rf.com/450wm/pengyou91/pengyou911303/pengyou91130300166/18489756-china-lugu-lake-panorama.jpg") 50% 50%/cover no-repeat fixed;
+  background: url("../img/bkg.jpg") no-repeat;
+  background-size: 100%;
 }
 
 .header--main {
@@ -35,12 +37,12 @@
 }
 
 .menu {
-  background: @grey--menu;
+  background: @grey--decor;
   &__wrapper {
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: center; 
     align-items: center;
     width: 90%;
     margin: 0 auto;
@@ -64,8 +66,11 @@
     text-transform: uppercase;
     text-decoration: none;
     
-    &:hover {      
-    color: @green--decor;
+    &:hover {  
+      background: @grey--dark; //add lower border in @green--decor
+    }
+    &:active {  
+      background: @grey--decor;
     }
   }
 }

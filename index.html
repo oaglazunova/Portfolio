@@ -10,9 +10,11 @@
 -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,900italic,700italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
+  
+  
 
 <body>
-
+  
   <header class="page-header">
     <div class="header-wrapper">
       <h1 class="header--main">
@@ -22,20 +24,20 @@
     </div>
     <div class="menu">
       <ul class="menu__wrapper">
+       <!-- <li>
+          <a class="menu__btn" href="#about">Обо мне</a>
+        </li> -->
         <li>
-          <a class="menu__btn" href="#">Обо мне</a>
+          <a class="menu__btn" href="#skills">Навыки</a>
         </li>
         <li>
-          <a class="menu__btn" href="#">Навыки</a>
+          <a class="menu__btn" href="#resume">Резюме</a>
         </li>
         <li>
-          <a class="menu__btn" href="#">Резюме</a>
+          <a class="menu__btn" href="#portfolio">Портфолио</a>
         </li>
         <li>
-          <a class="menu__btn" href="#">Портфолио</a>
-        </li>
-        <li>
-          <a class="menu__btn" href="#">Контакты</a>
+          <a class="menu__btn" href="#contacts">Контакты</a>
         </li>
       </ul>
     </div>
@@ -53,49 +55,13 @@
 
 
 
-    <div class="skills">
+    <div class="skills" id="skills">
       <div class="container">
         <h2 class="header--h2">Навыки</h2>
-        <p class="text">Я умею делать адаптивную вёрстку с адаптивной сеткой и графикой. Использую методологию БЭМ. Использую препроцессор LESS. Начальный уровень JavaScript. Photoshop - необходимвый уровень знаний для вёрстки и создания макетов, и немного больше (рисование текстур, ретушь и художественная обработка фото).</p>
-        <!--
-      HTML
-Familiarity of HTML syntax for multiple specifications, including HTML 5.
-Knowledge of the semantic meaning of all HTML elements.
-Familiarity with the semantic markup for display of lists, tabular data, forms, articles, etc.
-Knowledge at the level to be able to hand-code markup.
-Including media and images.
-
-CSS
-Specifying different CSS for various media, devices and displays.
-Best practices in CSS file organization and structure.
-Methods for including CSS inline, internal and external via linked style sheets.
-How to define, combine and group CSS selectors for HTML elements, ID, classes, pseudo classes, child or sibling.
-Syntax of CSS declarations, properties and attributes.
-CSS box model and methods for CSS positioning, absolute and relative.
-Knowledge of properties and attributes to control the display.
-Proficient with a CSS Preprocessor (LESS). 
-      
-Best practices
-Methods to ensure browser & device compatibility
-Methods for degrading gracefully for older browsers and displays.
-Methods to ensure accessibility.
-File compression techniques for improving speed.
-      
-JavaScript
-Knowledge of the operators, variables, datatypes, objects, properties and methods.
-Familiarity with control structures such as objects, functions, conditional statements, arrays, loops and expressions.
-Forms and regular expression validation and submitting data.
-Knowledge of how to apply logical operators and conditional statements.
-Knowledge of the DOM HTML objects and their properties.
-Event handling.
-Creating and controlling windows and dialogs.
-Processes for troubleshooting and debugging
-Familiarity with development and debugging tools for cross-browser issues.
-      
-jQuery
-Knowledge of how to employ the jQuery library for visual effects and event handling.
--->
-
+        <p class="text">Я отлично знаю HTML5 и CSS3, умею грамотно применять семантические тэги для правильного анализа и индексирования страницы поисковиками. Знакома с различными методологиями вёрстки (предпочитаю использовать БЭМ). Умею делать и тестировать кросс-браузерную вёрстку. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Владею JavaScript (могу написать скрипт для формы логина, сделать слайдер, подключить интерактивную карту, и т.п.) Хорошее знание Adobe Photoshop: необходимый уровень знаний для вёрстки и создания макетов, и немного больше (рисование текстур, художественная обработка фото). Обладаю базовыми знаниями в области SEO, в области проектирования интерфейсов (UX / UI). В работе использую LESS и Grunt.</p>
+        
+        <a class="btn--top" href="#top">Наверх</a>
+        
       </div>
     </div>
 
@@ -123,21 +89,21 @@ Knowledge of how to employ the jQuery library for visual effects and event handl
 
             <ul>
               <li class="slideshow__slide  slide--1">
-               <div class="slideshow__text-block">             
-                <h3 class="header--h3">Адаптивность</h3> 
-                <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
-                </div>  
+                <div class="slideshow__text-block">
+                  <h3 class="header--h3">Адаптивность</h3>
+                  <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
+                </div>
               </li>
               <li class="slideshow__slide  slide--2">
-               <div class="slideshow__text-block">
-                <h3 class="header--h3">Кросс-браузерность</h3>
-                <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
+                <div class="slideshow__text-block">
+                  <h3 class="header--h3">Кросс-браузерность</h3>
+                  <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
                 </div>
               </li>
               <li class="slideshow__slide  slide--3">
-               <div class="slideshow__text-block">
-                <h3 class="header--h3">xxx</h3>
-                <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
+                <div class="slideshow__text-block">
+                  <h3 class="header--h3">xxx</h3>
+                  <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
                 </div>
               </li>
             </ul>
@@ -148,7 +114,7 @@ Knowledge of how to employ the jQuery library for visual effects and event handl
 
 
 
-    <div class="resume">
+    <div class="resume" id="resume">
       <div class="container">
         <h2 class="header--h2">Резюме</h2>
         <p class="text">По ссылке ниже вы можете загрузить моё полное резюме в формате PDF:</p>
@@ -158,30 +124,52 @@ Knowledge of how to employ the jQuery library for visual effects and event handl
 
 
 
-    <div class="education">
-      <div class="container  clearfix">        
-        <div class="education__uni">         
-         <h2 class="header--h2">Образование</h2>
-          <p class="text">В 2003 году я закончила СПбГУ, получив степень бакалавра на кафедре прикладной и математической лингвистики. В 2005 году я получила в СПбГУ диплом магистра по специальности "Прикладная и математическая лингвистика".</p>
+    <div class="personal">
+      <div class="container  clearfix">
+
+        <div class="personal__education">
+          <div class="personal__uni">
+            <h2 class="header--h2">Образование</h2>
+            <p class="text">В 2003 году я закончила обучение на кафедре прикладной и математической лингвистики Санкт-петербургского государственного университета, получив степень бакалавра.<br>В 2005 году я получила в СПбГУ диплом магистра по специальности "Прикладная и математическая лингвистика".</p>
+          </div>
+
+          <div class="personal__certificates">
+            <h2 class="header--h2">Дополнительное обучение</h2>
+            <h3 class="header--h3">Продвинутый интенсив: создание веб-интерфейсов с помощью HTML и CSS </h3>
+            <a class="btn--small" href="#">HTML Academy</a>
+            <p class="text">В процессе обучения на интенсиве я активно использовала те инструменты, которыми должен владеть каждый верстальщик-профессионал: препроцессоры, GitHub, методологии, средства автоматизации.</p>
+            <a class="btn" href="#">Просмотерть сертификат</a>
+            <h3 class="header--h3">Создание веб-интерфейсов с помощью HTML и CSS</h3>
+            <a class="btn--small" href="#">HTML Academy</a>
+            <p class="text">На этих курсах я приобрела навыки для эффективного решения типовых профессиональных задач HTML-верстальщика: научилась создавать современные веб-интерфейсы, работать с живым кодом, использовать новейшие технологии. Полученные знания позволили мне существенно повысить свою эффективность: быстрее и точнее оценивать сложность задач, самостоятельно создавать посадочные страницы и т.д.</p>
+            <a class="btn" href="#">Просмотерть сертификат</a>
+          </div>
         </div>
 
-        <div class="education__certificates">
-       <!--  <h2 class="header--h2">Дополнительное обучение</h2> -->
-          <h3 class="header--h3">Продвинутый интенсив: создание веб-интерфейсов с помощью HTML и CSS </h3>
-          <a class="btn--small" href="#">HTML Academy</a>
-          <p class="text">В процессе обучения на интенсиве я активно использовала те инструменты, которыми должен владеть каждый верстальщик-профессионал: препроцессоры, GitHub, методологии, средства автоматизации.</p>
-          <a class="btn" href="#">Просмотерть сертификат</a>
-          <h3 class="header--h3">Создание веб-интерфейсов с помощью HTML и CSS</h3>
-          <a class="btn--small" href="#">HTML Academy</a>
-          <p class="text">На этих курсах я приобрела навыки для эффективного решения типовых профессиональных задач HTML-верстальщика: научилась создавать современные веб-интерфейсы, работать с живым кодом, использовать новейшие технологии. Полученные знания позволили мне существенно повысить свою эффективность: быстрее и точнее оценивать сложность задач, самостоятельно создавать посадочные страницы и т.д.</p>
-          <a class="btn" href="#">Просмотерть сертификат</a>
+        <div class="personal__experience">
+          <h2 class="header--h2">Опыт работы</h2>
+          <h3 class="header--h3">HTML-верстальщик</h3>
+          <p class="text">Freelance</p>
+          <p class="text">Сентябрь 2014 — по настоящее время</p>
+          <p class="text"><b>Среда:</b> HTML5, CSS3, LESS, Gunt, JavaScript, jQuery, GitHub, Adobe Photoshop, Inkspace, Brackets, Emmet</p>
+          <h3 class="header--h3">Инженер-разработчик интерфейсов</h3>
+          <a class="btn--small" href="http://www.gilbarco.com" target="_blank">Gilbarco-Autotank</a>
+          <p class="text">Июль 2014 — по настоящее время</p>
+          <p class="text"><b>Проект:</b> интегрированные решения для автоматических заправочных станций (Neste Oil, British Petroleum, Роснефть, Лукойл, Ашан)</p>
+          <p class="text"><b>Среда:</b> HTML, CSS, JavaScript, Adobe Photoshop, agile-методология разработки (SCRUM)</p>
+          <p class="text"><b>Обязанности:</b> создание и модификация пользовательских интерфейсов для платёжных терминалов на автоматических АЗС; локализация интерфейсов.</p>
+          <h3 class="header--h3">Прочий опыт работы:</h3>
+          <a class="btn" href="#">Скачать резюме</a>
         </div>
+        
+        <a class="btn--top" href="#top">Наверх</a>
+
       </div>
     </div>
 
 
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="header--h2">Портфолио</h2>
         <p class="text">Мои последние работы по вёрстке</p>
@@ -202,12 +190,15 @@ Knowledge of how to employ the jQuery library for visual effects and event handl
             <p class="text">xxx</p>
           </li>
         </ul>
+        
+        <a class="btn--top" href="#top">Наверх</a>
+        
       </div>
     </div>
 
 
 
-    <div class="contacts">
+    <div class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__social">
           <h2 class="header--h2">Контакты</h2>
@@ -225,6 +216,9 @@ Knowledge of how to employ the jQuery library for visual effects and event handl
           Имя: Ваш e-mail: Текст сообщения:
           <a class="btn" href="#">Отправить</a>
         </div>
+        
+        <a class="btn--top" href="#top">Наверх</a>
+        
       </div>
     </div>
 
