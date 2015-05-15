@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-color: @grey--font;
+  font-color: @text--main;
   font-size: @font-size;
   font-family: @font-family;
   background: #fff;
@@ -48,20 +48,21 @@ body {
   display: inline-block;
   padding: 15px;
   margin: 0 0 2em;
-  color: @green--decor;
+  background: transparent;
+  color: @primary;
   font-size: @font-size;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid @green--decor;
+  border: 1px solid @primary;
   &:hover {
     color: #fff;
-    background: @green--decor;
+    background: @primary;
   }
   &:active {
     color: #fff;
-    background: @grey--decor;
-    border: 1px solid @grey--decor;
+    background: @grey--300;
+    border: 1px solid @grey--300;
   }
 }
 
@@ -69,25 +70,36 @@ body {
   display: inline-block;
   padding: 5px;
   margin: 0 0 1em;
-  background: @green--decor;
+  background: @primary;
   color: #fff;
   font-size: @font-size;
   text-decoration: none;
-   &:hover {
-    background: @green--dark;
+  &:hover {
+    background: @primary--dark;
   }
   &:active {
-    background: @grey--decor;
-  }  
+    background: @grey--300;
+  }
 }
 
 .btn--top {
+  display: block;
+  margin: 2em 0;
+  color: @primary--dark;
+  font-size: @font-size;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    color: @grey--300;
+  }
 }
 
 .header--h2,
 .header--h3 {
   margin: 2em 0 1em;
-  color: @grey--h;
+  color: @text--main;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -102,7 +114,7 @@ body {
 
 .text {
   padding: 0 0 1em;
-  color: @grey--font;
+  color: @text--secondary;
   font-size: @font-size;
   // column-count: 2;
   // column-width: auto;

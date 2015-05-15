@@ -9,10 +9,7 @@
     @media(min-width: @screen--medium) {
       width: 800px;
     }
-    @media(min-width: @screen--big) {
-      width: 1000px;
-    }
-    
+        
     & input[type=radio] {
       position: absolute;
       left: 50%;
@@ -42,10 +39,8 @@
     height: 300px; 
     padding: 0 20px;
     text-align: left;
- //   position: relative;
     width: 20%;
     float: left;
-    border: 1px dashed @grey--decor;
     @media(min-width: @screen--small) {
       padding: 0;
     }    
@@ -91,29 +86,29 @@
 }
 
 label.arrows {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   position: absolute;
   top: 50%;
-  margin-top: -25px;
+  margin-top: -50px;
   display: none;
   cursor: pointer;
   transform: rotate(45deg);
   .hidden-text;
-  border: 3px @green;
+  border: 1px solid @primary;
 }
 
 label.arrows:hover {
-  border: 5px @blue;
+  border: 4px solid @primary--dark;
 }
 
 label.arrows:active {
-  margin-top: -23px
+  margin-top: -40px;
 }
 
 input[type=radio]#button-1:checked~.arrows#arrow-2,
 input[type=radio]#button-2:checked~.arrows#arrow-3 {
-  right: -55px;
+  right: -75px;
   display: none;
   border-style: solid solid none none;
   @media(min-width: @screen--medium) {
@@ -123,7 +118,7 @@ input[type=radio]#button-2:checked~.arrows#arrow-3 {
 
 input[type=radio]#button-2:checked~.arrows#arrow-1,
 input[type=radio]#button-3:checked~.arrows#arrow-2 {
-  left: -55px;
+  left: -75px;
   display: none;
   border-style: none none solid solid;
   @media(min-width: @screen--medium) {
@@ -133,7 +128,7 @@ input[type=radio]#button-3:checked~.arrows#arrow-2 {
 
 input[type=radio]#button-2:checked~.arrows#arrow-1,
 input[type=radio]#button-3:checked~.arrows#arrow-2 {
-  left: -50px;
+  left: -75px;
 }
 
 .slide--1 {

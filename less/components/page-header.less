@@ -1,10 +1,10 @@
-.page-header {  
-  margin: 0 0 60px 0;
+.page-header {
+  margin: 0;
 }
 
 .header-wrapper {
- // background: linear-gradient(to right, @green, @blue), url("http://us.123rf.com/450wm/pengyou91/pengyou911303/pengyou91130300166/18489756-china-lugu-lake-panorama.jpg") 50% 50%/cover no-repeat fixed;
-  background: url("../img/bkg.jpg") no-repeat;
+  // background: linear-gradient(to right, @green, @blue), url("http://us.123rf.com/450wm/pengyou91/pengyou911303/pengyou91130300166/18489756-china-lugu-lake-panorama.jpg") 50% 50%/cover no-repeat fixed;
+  background: @primary url("../img/bkg.jpg") no-repeat;
   background-size: 100%;
 }
 
@@ -17,18 +17,16 @@
   font-size: @font-size--h1;
   font-weight: 100;
   text-transform: uppercase;
-  height: 700px;
-  
+  height: 740px;
   @media(min-width: @screen--small) {
-      width: 90%;
-    }
-    @media(min-width: @screen--medium) {
-      width: 900px;
-    }
-    @media(min-width: @screen--big) {
-      width: 1180px;
-    }
-  
+    width: 90%;
+  }
+  @media(min-width: @screen--medium) {
+    width: 900px;
+  }
+  @media(min-width: @screen--big) {
+    width: 1180px;
+  }
   span {
     font-size: @font-size--h2;
     text-transform: none;
@@ -37,16 +35,15 @@
 }
 
 .menu {
-  background: @grey--decor;
+  background: #bdbdbd;
   &__wrapper {
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    
     @media(min-width: @screen--small) {
       width: 90%;
     }
@@ -65,13 +62,22 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    
-    &:hover {  
-      background: @grey--dark; //add lower border in @green--decor
+    position: relative;
+    &:hover {
+      background:#9e9e9e;
     }
-    &:active {  
-      background: @grey--decor;
+    &:active {
+      background: @grey--300;
+      color: @primary;
+    }
+    &:hover:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      width: 100%;
+      height: 4px;
+      background: @primary--light;
     }
   }
 }
-
