@@ -1,13 +1,19 @@
 .contacts {
   background: @grey--bkg;
-  &__options {
-    display: flex;
+  & .header--h2 {
+    margin-top: 0;
   }
   &__social {
-    width: 30%;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6em 0 3em;
+     
+    
   }
   &__form {
-    width: 65%;
     
     & input:focus,
     input[type="text"]:focus,
