@@ -36,11 +36,13 @@
       //the biggest one
       padding: 19% 41%;
       margin: -5% -16%;
-      background-color: @primary;
-      background-color: linear-gradient(315deg, lighten(@primary, 5), darken(@primary, 5));
-      box-shadow: 0 0 10px 5px darken(@primary, 5) inset;
+      background: @primary;
+      background: linear-gradient(to top, lighten(@primary, 5), darken(@primary, 5));
+      box-shadow: 0 0 5px 3px darken(@primary, 10) inset;
       z-index: 5;
       transform: rotate(45deg);
+      animation-name: the-biggest-one;
+      animation-duration: @anim--header;
     }
     &--2 {
       //yellow left
@@ -48,30 +50,36 @@
       margin: 40% -17%;
       background: @accent--light;
       background: linear-gradient(to top, @accent--dark 40%, @accent--light 40%);
-      box-shadow: 0 0 15px 10px desaturate(darken(@accent--dark, 10), 50) inset;
+      box-shadow: 0 0 5px 3px desaturate(darken(@accent--dark, 10), 50) inset;
       z-index: 4;
       transform: rotate(45deg);
+      animation-name: yellow-left;
+      animation-duration: @anim--header;
     }
     &--3 {
       //light top
       padding: 20% 40%;
       margin: -40% -3%;
       background: @primary--light;
-      background: linear-gradient(10deg, lighten(@primary--light, 5), darken(@primary--light, 5));
+      background: linear-gradient(10deg, lighten(@primary--light, 15), darken(@primary--light, 15));
       box-shadow: 0 0 10px 5px darken(@primary--light, 20) inset;
       z-index: 3;
       transform: rotate(45deg);
+      animation-name: light-top;
+      animation-duration: @anim--header;
     }
     &--4 {
       //light bottom
       padding: 39% 7%;
       margin: -42% 83%;
       background: @primary--light;
-      background: linear-gradient(-45deg, darken(@primary--light, 5), lighten(@primary--light, 5));
+      background: linear-gradient(45deg, darken(@primary--light, 15), lighten(@primary--light, 15));
       box-shadow: 0 0 10px 5px darken(@primary--light, 20) inset;
       outline: 1px solid @primary--light;
       z-index: 2;
       transform: rotate(45deg);
+      animation-name: light-bottom;
+      animation-duration: @anim--header;
     }
     &--5 {
       //yellow right
@@ -82,6 +90,8 @@
       box-shadow: 5px 5px 15px 10px desaturate(darken(@accent--dark, 20), 50) inset;
       z-index: 1;
       transform: rotate(45deg);
+      animation-name: yellow-right;
+      animation-duration: @anim--header;
     }
   }
   &__h1 {
@@ -95,11 +105,68 @@
     position: absolute;
     top: 30%;
     left: 15%;
+    animation-name: main-header;
+    animation-duration: @anim--header+5s;
+    opacity: 1;
     span {
       font-size: @font-size--h2;
       text-transform: none;
       font-weight: 400;
     }
+  }
+}
+
+@keyframes the-biggest-one {
+  from {
+    margin: 0 0;
+  }
+  to {
+    margin: -5% -16%;
+  }
+}
+
+@keyframes yellow-left {
+  from {
+    margin: 0 0;
+  }
+  to {
+    margin: 40% -17%;
+  }
+}
+
+@keyframes light-top {
+  from {
+    margin: 0 0;
+  }
+  to {
+    margin: -40% -3%;
+  }
+}
+
+@keyframes light-bottom {
+  from {
+    margin: 0 0;
+  }
+  to {
+    margin: -42% 83%;
+  }
+}
+
+@keyframes yellow-right {
+  from {
+    margin: 40% 120%;
+  }
+  to {
+    margin: 10% 80%;
+  }
+}
+
+@keyframes main-header {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
