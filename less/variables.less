@@ -15,11 +15,11 @@
 @text--dividers:  rgba(0, 0, 0, .12);
 
 
-@primary: #50bfb6; //#17b1a5
+@primary: #30bfb4; //#17b1a5
 @primary--light: desaturate(lighten(@primary, 20),10); //#80cbc4;
 @primary--dark: darken(@primary, 12); // #00796b;
-@accent--light: desaturate(lighten(@accent--dark,10),25); // #fff9c4;
-@accent--dark: #ffee58;
+@accent--light: spin(desaturate(lighten(@accent--dark,20),20), 5); // #fff9c4;
+@accent--dark: lighten(saturate(spin(@primary, -120), 15), 10); // #ffee58;
 
 @font-family: 'Roboto', sans-serif;
 
@@ -31,3 +31,18 @@
 @font-size--menu: 16px;
 
 @anim--header: 2s;
+
+/* Complementary Color Scheme 
+@base: #663333;
+@complement1: spin(@base, 180);
+@complement2: darken(spin(@base, 180), 5%);
+@lighten1: lighten(@base, 15%);
+@lighten2: lighten(@base, 30%);
+*/
+
+/* Subtle Color Scheme 
+@base: #663333;
+@lighter1: lighten(spin(@base, 5), 10%);
+@lighter2: lighten(spin(@base, 10), 20%);
+@darker1: darken(spin(@base, -5), 10%);
+@darker2: darken(spin(@base, -10), 20%); */
