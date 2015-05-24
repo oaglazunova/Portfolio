@@ -34,39 +34,26 @@
 
 
   <header class="header">
-    <div class="header__bkg">
-      <div class="header__rect header__rect--1"></div>
-      <div class="header__rect header__rect--2"></div>
-      <div class="header__rect header__rect--3"></div>
-      <div class="header__rect header__rect--4"></div>
-      <div class="header__rect header__rect--5"></div>
-    </div>
-    <h1 class="header__h1">	  
+    <div class="header__bkg">      
+      <div class="container">
+        <ul class="menu">
+          <li>
+            <a class="menu__btn" href="#portfolio">Проекты</a>
+          </li>
+          <li>
+            <a class="menu__btn" href="#skills">Навыки</a>
+          </li>
+          <li>
+            <a class="menu__btn" href="#resume">Резюме</a>
+          </li>
+          <li>
+            <a class="menu__btn" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <h1 class="header__h1">	  
         Ольга Глазунова<br> 
         <span>Вёрстка веб-страниц</span>
-    </h1>
-
-    <div class="menu">
-      <ul class="menu__wrapper">
-        <li>
-          <a class="menu__btn" href="#skills">Навыки</a>
-        </li>
-        <li>
-          <a class="menu__btn" href="#resume">Резюме</a>
-        </li>
-        <li>
-          <a class="menu__btn" href="#portfolio">Портфолио</a>
-        </li>
-        <li>
-          <a class="menu__btn" href="#contacts">Контакты</a>
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="about">
-      <div class="container">
-        <p class="about__text  text--large">Я начинающий верстальщик сайтов. Это мой красивый сайт. Мне нравится работать над разными проектами и воплощать идеи в реальность. Я сделала этот сайт в качестве тренировки в дизайне и вёрстке: это мой первый проект, самостоятельно разработанный с нуля. Меня увлекает дизайн и я планирую улучшать свои навыки в нём и дальше, но всё же свою карьеру я связываю с веб-программированием: в ближайших планах - подтянуть JavaScript до уровня “выше среднего” и начать изучать Python.</p>
+        </h1>
       </div>
     </div>
   </header>
@@ -75,61 +62,54 @@
 
   <div class="page-content">
 
+    <div class="about">
+      <div class="container">
+        <p class="about__text  text--large">
+          I am a web developer from Cape Breton, Nova Scotia and currently living in Halifax. I enjoy building everything from small business sites to rich interactive web apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here. Я начинающий верстальщик сайтов. Это мой красивый сайт. Мне нравится работать над разными проектами и воплощать идеи в реальность. Я сделала этот сайт в качестве тренировки в дизайне и вёрстке: это мой первый проект, самостоятельно разработанный с нуля. Меня увлекает дизайн и я планирую улучшать свои навыки в нём и дальше, но всё же свою карьеру я связываю с веб-программированием: в ближайших планах - подтянуть JavaScript до уровня “выше среднего” и начать изучать Python.</p>
+      </div>
+    </div>
+
+
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="portfolio__examples">
+          <a class="portfolio__work  portfolio__work--suomi" href="#">
+            <div class="portfolio__info">
+              <h3 class="header--h3">Такси в Финляндию</h3>
+              <p class="text">Лэндинг для компании, занимающейся организацией поездок в Финляндию, с возможностью заказа машины через сайт.
+                <br>
+                <br><strong>Дизайн и вёрстка:</strong> Ольга Глазунова</p>
+            </div>
+          </a>
+          <a class="portfolio__work  portfolio__work--pink" href="#">
+            <div class="portfolio__info">
+              <h3 class="header--h3">PINK</h3>
+              <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов.
+                <br>
+                <br><strong>Дизайн макета:</strong> Антон Глуханько.
+                <br><strong>Вёрстка:</strong> Ольга Глазунова.</p>
+            </div>
+          </a>
+          <a class="portfolio__work  portfolio__work--tm" href="#">
+            <div class="portfolio__info">
+              <h3 class="header--h3">Техномарт</h3>
+              <p class="text">Выпускной проект на курсах HTML Academy: интернет-магазин строительной техники.
+                <br>
+                <br><strong>Дизайн макета:</strong> Антон Глуханько.
+                <br><strong>Вёрстка:</strong> Ольга Глазунова.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
 
 
     <section class="skills" id="skills">
       <div class="container">
         <h2 class="header--h2">Навыки</h2>
         <p class="text">Я отлично знаю HTML5 и CSS3, умею грамотно применять семантические тэги для правильного анализа и индексирования страницы поисковиками. Знакома с различными методологиями вёрстки (предпочитаю использовать БЭМ). Умею делать и тестировать кросс-браузерную вёрстку. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Владею JavaScript (могу написать скрипт для формы логина, сделать слайдер, подключить интерактивную карту, и т.п.) Хорошее знание Adobe Photoshop: необходимый уровень знаний для вёрстки и создания макетов, и немного больше (рисование текстур, художественная обработка фото). Обладаю базовыми знаниями в области SEO, в области проектирования интерфейсов (UX / UI). В работе использую LESS и Grunt.</p>
-      </div>
-    </section>
-
-
-
-    <section class="slideshow">
-
-      <div class="container">
-        <div class="slideshow__wrapper">
-
-          <input type="radio" id="button-1" name="controls" checked="checked" />
-          <input type="radio" id="button-2" name="controls" />
-          <input type="radio" id="button-3" name="controls" />
-
-          <div class="slider-paginator">
-            <label for="button-1"></label>
-            <label for="button-2"></label>
-            <label for="button-3"></label>
-          </div>
-
-          <label for="button-1" class="arrows" id="arrow-1">></label>
-          <label for="button-2" class="arrows" id="arrow-2">></label>
-          <label for="button-3" class="arrows" id="arrow-3">></label>
-
-          <div class="slideshow__slider">
-
-            <ul>
-              <li class="slideshow__slide  slide--1">
-                <div class="slideshow__text-block">
-                  <h3 class="header--h3">Адаптивность</h3>
-                  <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
-                </div>
-              </li>
-              <li class="slideshow__slide  slide--2">
-                <div class="slideshow__text-block">
-                  <h3 class="header--h3">Кросс-браузерность</h3>
-                  <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
-                </div>
-              </li>
-              <li class="slideshow__slide  slide--3">
-                <div class="slideshow__text-block">
-                  <h3 class="header--h3">xxx</h3>
-                  <p class="text">Have your website or app built to scale the right way, regardless of the platform or device. Responsive Design makes it worry free.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-        </div>
       </div>
     </section>
 
@@ -148,6 +128,7 @@
     <section class="personal">
       <div class="container">
         <div class="clearfix">
+
           <div class="personal__education">
             <div class="personal__uni">
               <h2 class="header--h2">Образование</h2>
@@ -155,7 +136,6 @@
                 <br>
                 <br>В 2005 году я получила в СПбГУ диплом магистра по специальности "Прикладная и математическая лингвистика".</p>
             </div>
-
             <div class="personal__certificates">
               <h2 class="header--h2">Дополнительное обучение</h2>
               <h3 class="header--h3">Продвинутый интенсив:<br>создание веб-интерфейсов с помощью HTML и CSS </h3>
@@ -185,48 +165,6 @@
             <a class="btn" href="#" target="_blank">Скачать резюме</a>
           </div>
 
-        </div>
-        <a class="btn-top" href="#top">Наверх &#8593;</a>
-
-      </div>
-    </section>
-
-
-
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="header--h2">Портфолио</h2>
-        <div class="portfolio__examples">
-          <a class="portfolio__work  portfolio__work--suomi" href="#">
-            <div class="portfolio__info">
-              <h3 class="header--h3">Такси в Финляндию</h3>
-              <p class="text">Лэндинг для компании, занимающейся организацией поездок в Финляндию, с возможностью заказа машины через сайт.
-                <br>
-                <br><strong>Дизайн и вёрстка:</strong> Ольга Глазунова</p>
-            </div>
-          </a>
-          <a class="portfolio__work  portfolio__work--pink" href="#">
-            <div class="portfolio__info">
-              <h3 class="header--h3">PINK</h3>
-              <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов.
-                <br>
-                <br><strong>Дизайн макета:</strong> Антон Глуханько.
-                <br><strong>Вёрстка:</strong> Ольга Глазунова.</p>
-            </div>
-          </a>
-          <a class="portfolio__work  portfolio__work--tm" href="#">
-            <div class="portfolio__info">
-              <h3 class="header--h3">Техномарт</h3>
-              <p class="text">Выпускной проект на курсах HTML Academy: интернет-магазин строительной техники.
-                <br>
-                <br><strong>Дизайн макета:</strong> Антон Глуханько.
-                <br><strong>Вёрстка:</strong> Ольга Глазунова.</p>
-            </div>
-          </a>
-        </div>
-        <div class="portfolio__btns">
-          <a class="btn-top" href="#top">Наверх &#8593;</a>
-          <span class="btn">Другие работы</span>
         </div>
       </div>
     </section>
@@ -271,7 +209,6 @@
             </div>
           </form>
         </div>
-        <a class="btn-top" href="#top">Наверх &#8593;</a>
       </div>
     </section>
 
@@ -279,10 +216,11 @@
 
   <footer class="page-footer">
     <div class="container">
-      <p class="page-footer__design">This responsive web site has been designed, developed, and maintained by Roy Barber. It’s built with Jekyll, optimised for a fast page load, hosted on AWS and served via CloudFront. Current Average load is 0.4s.</p>
+      <p class="page-footer__design">This responsive web site has been designed, developed, and maintained by Roy Barber. It’s built with Jekyll, optimised for a fast page load, hosted on AWS and served via CloudFront. Current Average load is 0.4s. This website was built responsively using HTML5, CSS and some jQuery magic. For the CMS, I initially thought of using something new, like Anchor or Kirby, but I decided to stick it out with WordPress. Fonts are served through Google Fonts. For the photo grid, I'm using Masonry (Thanks David DeSandro), and for the lightbox, I decided to customize this jQuery plugin by Osvaldas Valutis. All photos on the website were taken by me.</p>
       <p class="page-footer__copyright">&#169; 2015 Ольга Глазунова</p>
     </div>
   </footer>
+
 
 
   <script src="js/gen_validatorv31.js"></script>
@@ -296,6 +234,7 @@
     frmvalidator.addValidation("email", "email", "Please enter a valid email address");
     frmvalidator.addValidation("message", "req", "Please enter a message");
   </script>
+
 </body>
 
 </html>
