@@ -1,23 +1,14 @@
 .header {
-  margin: 0;
-  &__bkg {
-    height: 700px;
-    width: 100%;
-    z-index: 0;
-    overflow: hidden;
-    
-    background: url("../img/bkg.jpg") 50% 50%/cover no-repeat fixed transparent;
-  }
+  height: 800px;  
+    background: #000 url("../img/bkg.jpg") 50% 50%/cover no-repeat fixed;
+  
   &__h1 {
-    margin: 20rem auto 0;
+    margin: 25rem auto 0;
     text-align: left;
     color: #fff;
     font-size: @font-size--h1;
     font-weight: 100;
     text-transform: uppercase;
-    height: 740px;
-    top: 30%;
-    left: 15%;
     animation-name: main-header;
     animation-duration: @anim--header+5s;
     opacity: 1;
@@ -42,18 +33,15 @@
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-end;
-  width: 90%;
+  justify-content: center;
   margin: 0 auto;
-  @media(min-width: @screen--small) {
-    width: 90%;
-  }
+  
   @media(min-width: @screen--medium) {
-    width: 900px;
+    
+  justify-content: flex-end;
   }
-  @media(min-width: @screen--big) {
-    width: 1180px;
-  }
+  
+  
   &__btn {
     display: block;
     padding: 20px 40px;

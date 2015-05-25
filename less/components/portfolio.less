@@ -1,45 +1,16 @@
 .portfolio {
-  .header--h2 {
-    color: @grey--300;
-  }
-  &__examples {
-    display: flex;
-    justify-content: space-between;
-  }
   &__work {
-    display: block;
-    height: 600px;
-    width: 380px;
-    position: relative;
-    overflow: hidden;
-    transform: scale(.98);
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
-    border: 1px solid @accent--light;
-    &:hover {
-      transform: scale(1);
-      border: 1px solid @accent--dark;
-    }
-    &--tm {
-      background: url("../img/portfolio-tm.jpg") 50% 0;
-    }
-    &--pink {
-      background: url("../img/portfolio-pink.jpg") 50% 0;
-    }
-    &--suomi {
-      background: url("../img/portfolio-suomi.jpg") 50% 0;
-    }
-    &:hover .portfolio__info {
-      top: 0;
-    }
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
   }
-  &__info {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 20px 40px;
-    background: url("../img/diagonal-bkg.svg") no-repeat 0 -200px;
-    position: absolute;
-    top: -600px;
-    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-  }
+ &__img {
+   width: 48%;
+   
+ }
+   &__description {
+   width: 48%;
+   
+ }
+  
 }

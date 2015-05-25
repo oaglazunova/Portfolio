@@ -11,10 +11,7 @@
   <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,900italic,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
 </head>
 
-
-
 <body>
-
   <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="icon-codepen" viewbox="0 0 125 118">
       <path class="outer-ring" d="M60.048 0C26.884 0 0 26.9 0 60.048s26.884 60 60 60.047c33.163 0 60.047-26.883 60.047-60.047 S93.211 0 60 0z M60.048 110.233c-27.673 0-50.186-22.514-50.186-50.186S32.375 9.9 60 9.9 c27.672 0 50.2 22.5 50.2 50.186S87.72 110.2 60 110.233z" />
@@ -30,11 +27,10 @@
       <path d="M21.543,34.568c-0.054,0,0.592,1.367,0.61,1.367  c1.41,2.516,4.128,4.08,8.713,4.514c-0.654,0.488-1.44,1.414-1.549,2.484c-0.823,0.523-2.478,0.696-3.764,0.297  c-1.803-0.559-2.493-4.066-5.192-3.566c-0.584,0.107-0.468,0.486,0.037,0.809c0.823,0.523,1.597,1.178,2.194,2.571  c0.459,1.07,1.423,2.981,4.473,2.981c1.21,0,2.058-0.143,2.058-0.143s0.023,2.731,0.023,3.793c0,1.225-1.682,1.57-1.682,2.159  c0,0.233,0.557,0.255,1.004,0.255c0.884,0,2.723-0.725,2.723-1.998c0-1.011,0.017-4.41,0.017-5.006c0-1.3,0.709-1.712,0.709-1.712  s0.088,6.94-0.169,7.872c-0.302,1.094-0.847,0.939-0.847,1.427c0,0.726,2.214,0.179,2.948-1.416c0.567-1.239,0.319-8.05,0.319-8.05  l0.605-0.012c0,0,0.034,3.117,0.013,4.542c-0.021,1.476-0.122,3.342,0.77,4.222c0.586,0.579,2.484,1.594,2.484,0.666  c0-0.539-1.04-0.982-1.04-2.441v-6.715c0.831,0,0.706,2.208,0.706,2.208l0.061,4.103c0,0-0.184,1.494,1.645,2.119  c0.645,0.223,2.025,0.283,2.09-0.09c0.065-0.373-1.662-0.928-1.678-2.084c-0.01-0.707,0.032-1.119,0.032-4.187  c0-3.068-0.419-4.202-1.88-5.106c4.508-0.455,7.299-1.551,8.658-4.486c0.106,0.003,0.555-1.371,0.496-1.371  c0.305-1.108,0.47-2.419,0.502-3.971c-0.008-4.21-2.058-5.699-2.451-6.398c0.58-3.187-0.098-4.637-0.412-5.135  c-1.162-0.406-4.041,1.045-5.615,2.067c-2.564-0.737-7.986-0.666-10.019,0.19c-3.751-2.639-5.736-2.235-5.736-2.235  s-1.283,2.259-0.339,5.565c-1.234,1.546-2.154,2.64-2.154,5.539C20.906,31.83,21.102,33.292,21.543,34.568z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z"></path>
     </symbol>
   </svg>
+  
+  
 
-
-
-  <header class="header">
-    <div class="header__bkg">      
+  <header class="header">     
       <div class="container">
         <ul class="menu">
           <li>
@@ -55,7 +51,6 @@
         <span>Вёрстка веб-страниц</span>
         </h1>
       </div>
-    </div>
   </header>
 
 
@@ -73,34 +68,47 @@
 
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <div class="portfolio__examples">
-          <a class="portfolio__work  portfolio__work--suomi" href="#">
-            <div class="portfolio__info">
-              <h3 class="header--h3">Такси в Финляндию</h3>
-              <p class="text">Лэндинг для компании, занимающейся организацией поездок в Финляндию, с возможностью заказа машины через сайт.
-                <br>
-                <br><strong>Дизайн и вёрстка:</strong> Ольга Глазунова</p>
+        
+        <div class="portfolio__work">
+          <img class="portfolio__img  portfolio__img--suomi" alt="Такси в Финляндию" src="img/work-pink.jpg">
+          <div class="portfolio__description">
+            <h3 class="header--h3">Такси в Финляндию</h3>
+            <p class="text">Лэндинг для компании, занимающейся организацией поездок в Финляндию, с возможностью заказа машины через сайт. Это мой первый проект, дизайн и вёрстку для которого я выполнила сама. Я хотела сделать страницу лаконичной и в то же время функциональной. Наиболее сложной (и интересной!) частью для меня было написать скрипт для обработки и проверки правильности заполнения формы и PHP скрпт для серверной части, а также последующая оптимизация страницы. </p>
+            <div class="portfolio__technologies">
+              <span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">HTML5/CSS3</span><span class="highlight">PHP</span><span class="highlight">Javascript</span><span class="highlight">Resposive layout</span>
             </div>
-          </a>
-          <a class="portfolio__work  portfolio__work--pink" href="#">
-            <div class="portfolio__info">
-              <h3 class="header--h3">PINK</h3>
-              <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов.
-                <br>
-                <br><strong>Дизайн макета:</strong> Антон Глуханько.
-                <br><strong>Вёрстка:</strong> Ольга Глазунова.</p>
-            </div>
-          </a>
-          <a class="portfolio__work  portfolio__work--tm" href="#">
-            <div class="portfolio__info">
-              <h3 class="header--h3">Техномарт</h3>
-              <p class="text">Выпускной проект на курсах HTML Academy: интернет-магазин строительной техники.
-                <br>
-                <br><strong>Дизайн макета:</strong> Антон Глуханько.
-                <br><strong>Вёрстка:</strong> Ольга Глазунова.</p>
-            </div>
-          </a>
+            <a class="btn-small" href="#">Ссылка на веб-сайт</a><br>            
+            <a class="btn-small" href="#">Репозиторий проекта на Github</a>
+          </div>
         </div>
+        
+        <div class="portfolio__work"> 
+          
+          <img class="portfolio__img  portfolio__img--suomi" alt="PINK" src="img/work-pink.jpg">
+          <div class="portfolio__description">
+            <h3 class="header--h3">PINK</h3>
+            <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов. На курсах я изучала особенности адаптивного дизайна, а также автоматизацию в вёрстке, и все эти зания применяла на практике, работая над выпускным проектом. Самой захватывающей вещью для меня оказался Less: он превратил CSS из скучной мешанины свойств в прекрасно структурированный и чёткий код. А возможность использовать mixin'ы и переменные очень облегчает работу.</p>
+            <div class="portfolio__technologies">
+              <span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">HTML5/CSS3</span><span class="highlight">Javascript</span><span class="highlight">Resposive layout</span><span class="highlight">Google Maps API</span>
+            </div>
+            <a class="btn-small" href="#">Ссылка на веб-сайт</a><br>            
+            <a class="btn-small" href="#">Репозиторий проекта на Github</a>
+          </div>
+        </div>
+        
+        <div class="portfolio__work"> 
+          <img class="portfolio__img  portfolio__img--suomi" alt="Техномарт" src="img/work-tm.jpg">
+          <div class="portfolio__description">
+            <h3 class="header--h3">Техномарт</h3>
+            <p class="text">Выпускной проект на курсах HTML Academy: интернет-магазин строительной техники. Это мой самый первый серьёзный проект. Из предложенных на курсах макетов я выбрала самый сложный и не прогадала: он содержал интересные с точки зркния дизайна и выполнения элементы и мне было очень интересно над ним работать! Несмотря на то, что было нелегко (всё-таки это очень насыщенный интенсив - всего месяц и на курсы и вебинары, и на ввёрстку выпускного проекта), я успела закончить вёрстку в срок. После окончания второго интенсива я немного доработала этот проект - добавила слайдеры на Javascript.</p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">Javascript</span>
+            </div>
+            <a class="btn-small" href="#">Ссылка на веб-сайт</a><br>            
+            <a class="btn-small" href="#">Репозиторий проекта на Github</a>
+          </div>
+        </div>    
+        
       </div>
     </section>
 
@@ -127,26 +135,28 @@
 
     <section class="personal">
       <div class="container">
-        <div class="clearfix">
 
           <div class="personal__education">
+            
             <div class="personal__uni">
               <h2 class="header--h2">Образование</h2>
               <p class="text">В 2003 году я закончила обучение на кафедре прикладной и математической лингвистики Санкт-петербургского государственного университета, получив степень бакалавра.
                 <br>
                 <br>В 2005 году я получила в СПбГУ диплом магистра по специальности "Прикладная и математическая лингвистика".</p>
             </div>
-            <div class="personal__certificates">
+            
+            <div class="personal__certificates">              
               <h2 class="header--h2">Дополнительное обучение</h2>
               <h3 class="header--h3">Продвинутый интенсив:<br>создание веб-интерфейсов с помощью HTML и CSS </h3>
-              <a class="btn-small" href="https://htmlacademy.ru/" target="_blank">HTML Academy <span>&#9654;</span></a>
+              <a class="btn-small" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
               <p class="text">В процессе обучения на интенсиве я активно использовала те инструменты, которыми должен владеть каждый верстальщик-профессионал: препроцессоры, GitHub, методологии, средства автоматизации.</p>
               <a class="btn" href="https://drive.google.com/open?id=0B_QBmdIJugAhUVdBN0U2M1FuakU&amp;authuser=0" target="_blank">Просмотерть сертификат</a>
               <h3 class="header--h3">Создание веб-интерфейсов с помощью HTML и CSS</h3>
-              <a class="btn-small" href="https://htmlacademy.ru/" target="_blank">HTML Academy <span>&#9654;</span></a>
+              <a class="btn-small" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
               <p class="text">На этих курсах я приобрела навыки для эффективного решения типовых профессиональных задач HTML-верстальщика: научилась создавать современные веб-интерфейсы, работать с живым кодом, использовать новейшие технологии. Полученные знания позволили мне существенно повысить свою эффективность: быстрее и точнее оценивать сложность задач, самостоятельно создавать посадочные страницы и т.д.</p>
-              <a class="btn" href="https://drive.google.com/open?id=0B_QBmdIJugAhTGpwYlZrbzh6a0U&amp;authuser=0" target="_blank">Просмотерть сертификат</a>
+              <a class="btn" href="https://drive.google.com/open?id=0B_QBmdIJugAhTGpwYlZrbzh6a0U&amp;authuser=0" target="_blank">Просмотерть сертификат</a>              
             </div>
+            
           </div>
 
           <div class="personal__experience">
@@ -156,7 +166,7 @@
             <p class="text">Сентябрь 2014 — по настоящее время</p>
             <p class="text"><b>Среда:</b> HTML5, CSS3, LESS, Gunt, JavaScript, jQuery, GitHub, Adobe Photoshop, Inkspace, Brackets, Emmet</p>
             <h3 class="header--h3">Инженер-разработчик интерфейсов</h3>
-            <a class="btn-small" href="http://www.gilbarco.com" target="_blank">Gilbarco-Autotank <span>&#9654;</span></a>
+            <a class="btn-small" href="http://www.gilbarco.com" target="_blank">Gilbarco-Autotank</a>
             <p class="text">Июль 2014 — по настоящее время</p>
             <p class="text"><b>Проект:</b> интегрированные решения для автоматических заправочных станций (Neste Oil, British Petroleum, Роснефть, Лукойл, Ашан)</p>
             <p class="text"><b>Среда:</b> HTML, CSS, JavaScript, Adobe Photoshop, agile-методология разработки (SCRUM)</p>
@@ -164,8 +174,7 @@
             <h3 class="header--h3">Прочий опыт работы:</h3>
             <a class="btn" href="#" target="_blank">Скачать резюме</a>
           </div>
-
-        </div>
+        
       </div>
     </section>
 
@@ -173,11 +182,12 @@
 
     <section class="contacts" id="contacts">
       <div class="container">
+        
         <div class="contacts__social">
           <a class="btn   btn-social" href="skype:olga_glazunova_gvr?chat">Skype 
           <div class="btn-social__hover"> <svg width="57" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-skype"></use></svg></div>
         </a>
-          <a class="btn   btn-social" href="#" target="_blank">Facebook 
+          <a class="btn   btn-social" href="https://www.facebook.com/profile.php?id=100009512325575" target="_blank">Facebook 
           <div class="btn-social__hover"> <svg width="57" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg></div>
         </a>
           <a class="btn   btn-social" href="https://github.com/oaglazunova" target="_blank">Github
@@ -187,6 +197,7 @@
           <div class="btn-social__hover"> <svg width="57" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-codepen"></use></svg></div>
         </a>
         </div>
+        
         <div class="contacts__form">
           <form method="post" name="contact_form" action="sendmail.php" id="form">
             <h2 class="header--h2">Заинтересованы в том, чтобы работать со мной?
@@ -209,6 +220,7 @@
             </div>
           </form>
         </div>
+        
       </div>
     </section>
 
@@ -220,8 +232,6 @@
       <p class="page-footer__copyright">&#169; 2015 Ольга Глазунова</p>
     </div>
   </footer>
-
-
 
   <script src="js/gen_validatorv31.js"></script>
   <script>
