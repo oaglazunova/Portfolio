@@ -2,7 +2,17 @@
   &__work {
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
+    position: relative;
+    &:not(:last-child):after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 1px;
+      background: rgba(0, 0, 0, .12);
+      bottom: 0;
+      left: 25%;
+    }
   }
  &__img {
    width: 48%;

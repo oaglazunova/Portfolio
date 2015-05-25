@@ -1,7 +1,6 @@
 .header {
-  height: 800px;  
-    background: #000 url("../img/bkg.jpg") 50% 50%/cover no-repeat fixed;
-  
+  height: 775px;
+  background: #000 url("../img/bkg.jpg") 50% 50%/cover no-repeat fixed;
   &__h1 {
     margin: 25rem auto 0;
     text-align: left;
@@ -10,8 +9,9 @@
     font-weight: 100;
     text-transform: uppercase;
     animation-name: main-header;
-    animation-duration: @anim--header+5s;
+    animation-duration: 4s;
     opacity: 1;
+    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
     span {
       font-size: @font-size--h2;
       text-transform: none;
@@ -22,10 +22,14 @@
 
 @keyframes main-header {
   from {
+    margin: 0 auto 0;
     opacity: 0;
+    transform: scale(.5);
   }
   to {
+    margin: 25rem auto 0;
     opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -35,13 +39,9 @@
   flex-wrap: nowrap;
   justify-content: center;
   margin: 0 auto;
-  
   @media(min-width: @screen--medium) {
-    
-  justify-content: flex-end;
+    justify-content: flex-end;
   }
-  
-  
   &__btn {
     display: block;
     padding: 20px 40px;
