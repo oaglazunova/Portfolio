@@ -9,10 +9,19 @@
 @grey--50: #fafafa;
 @grey--bkg: #f2f2f2;
 
+/* Dark text on light backgrounds */
 @text--main: rgba(0, 0, 0, .87);
 @text--secondary: rgba(0, 0, 0, .54);
 @text--hints:  rgba(0, 0, 0, .87);
 @text--dividers:  rgba(0, 0, 0, .12);
+
+/* 
+White text on dark backgrounds 
+@text--main: rgba(255, 255, 255, 1);
+@text--secondary: rgba(255, 255, 255, .7);
+@text--hints:  rgba(255, 255, 255, .3);
+@text--dividers:  rgba(255, 255, 255, .12);
+*/
 
 @primary: #50bfb6; //#17b1a5
 @primary--light: desaturate(lighten(@primary, 20),10); //#80cbc4;
@@ -31,7 +40,8 @@
 
 @line-height: 28;
 
-/* Complementary Color Scheme 
+/* 
+Complementary Color Scheme 
 @base: #663333;
 @complement1: spin(@base, 180);
 @complement2: darken(spin(@base, 180), 5%);
@@ -39,9 +49,11 @@
 @lighten2: lighten(@base, 30%);
 */
 
-/* Subtle Color Scheme 
+/* 
+Subtle Color Scheme 
 @base: #663333;
 @lighter1: lighten(spin(@base, 5), 10%);
 @lighter2: lighten(spin(@base, 10), 20%);
 @darker1: darken(spin(@base, -5), 10%);
-@darker2: darken(spin(@base, -10), 20%); */
+@darker2: darken(spin(@base, -10), 20%); 
+*/

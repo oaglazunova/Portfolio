@@ -39,10 +39,10 @@
           <a class="menu__btn" href="#portfolio">Проекты</a>
         </li>
         <li>
-          <a class="menu__btn" href="#skills">Навыки</a>
+          <a class="menu__btn" href="#resume">Резюме</a>
         </li>
         <li>
-          <a class="menu__btn" href="#resume">Резюме</a>
+          <a class="menu__btn" href="#about">Обо мне</a>
         </li>
         <li>
           <a class="menu__btn" href="#contacts">Контакты</a>
@@ -59,9 +59,9 @@
 
   <div class="page-content">
 
-    <div class="about">
+    <div class="intro">
       <div class="container">
-        <p class="about__text  text--large">
+        <p class="intro__text">
           I am a web developer from Cape Breton, Nova Scotia and currently living in Halifax. I enjoy building everything from small business sites to rich interactive web apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here. Я начинающий верстальщик сайтов. Это мой красивый сайт. Мне нравится работать над разными проектами и воплощать идеи в реальность. Я сделала этот сайт в качестве тренировки в дизайне и вёрстке: это мой первый проект, самостоятельно разработанный с нуля. Меня увлекает дизайн и я планирую улучшать свои навыки в нём и дальше, но всё же свою карьеру я связываю с веб-программированием: в ближайших планах - подтянуть JavaScript до уровня “выше среднего” и начать изучать Python.</p>
       </div>
     </div>
@@ -72,7 +72,7 @@
       <div class="container">
 
         <div class="portfolio__work">
-          <img class="portfolio__img  portfolio__img--suomi" alt="Такси в Финляндию" src="img/work-pink.jpg">
+          <img class="portfolio__img  portfolio__img--suomi" title="Такси в Финляндию" alt="Такси в Финляндию" src="img/work-suomi.jpg">
           <div class="portfolio__description">
             <h3 class="header--h3">Такси в Финляндию</h3>
             <p class="text">Лэндинг для компании, занимающейся организацией поездок в Финляндию, с возможностью заказа машины через сайт. Это мой первый проект, дизайн и вёрстку для которого я выполнила сама. Я хотела сделать страницу лаконичной и в то же время функциональной. Наиболее сложной (и интересной!) частью для меня было написать скрипт для обработки и проверки правильности заполнения формы и PHP скрпт для серверной части, а также последующая оптимизация страницы. </p>
@@ -87,7 +87,7 @@
 
         <div class="portfolio__work">
 
-          <img class="portfolio__img  portfolio__img--suomi" alt="PINK" src="img/work-pink.jpg">
+          <img class="portfolio__img  portfolio__img--suomi" title="PINK" alt="PINK" src="img/output_IqrMDL.gif">
           <div class="portfolio__description">
             <h3 class="header--h3">PINK</h3>
             <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов. На курсах я изучала особенности адаптивного дизайна, а также автоматизацию в вёрстке, и все эти зания применяла на практике, работая над выпускным проектом. Самой захватывающей вещью для меня оказался Less: он превратил CSS из скучной мешанины свойств в прекрасно структурированный и чёткий код. А возможность использовать mixin'ы и переменные очень облегчает работу.</p>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="portfolio__work">
-          <img class="portfolio__img  portfolio__img--suomi" alt="Техномарт" src="img/work-tm.jpg">
+          <img class="portfolio__img  portfolio__img--suomi" title="Техномарт" alt="Техномарт" src="img/work-tm.jpg">
           <div class="portfolio__description">
             <h3 class="header--h3">Техномарт</h3>
             <p class="text">Выпускной проект на курсах HTML Academy: интернет-магазин строительной техники. Это мой самый первый серьёзный проект. Из предложенных на курсах макетов я выбрала самый сложный и не прогадала: он содержал интересные с точки зркния дизайна и выполнения элементы и мне было очень интересно над ним работать! Несмотря на то, что было нелегко (всё-таки это очень насыщенный интенсив - всего месяц и на курсы и вебинары, и на ввёрстку выпускного проекта), я успела закончить вёрстку в срок. После окончания второго интенсива я немного доработала этот проект - добавила слайдеры на Javascript.</p>
@@ -117,15 +117,6 @@
       </div>
     </section>
 
-
-<!--
-    <section class="skills" id="skills">
-      <div class="container">
-        <h2 class="header--h2">Навыки</h2>
-        <p class="text">Я отлично знаю HTML5 и CSS3, умею грамотно применять семантические тэги для правильного анализа и индексирования страницы поисковиками. Знакома с различными методологиями вёрстки (предпочитаю использовать БЭМ). Умею делать и тестировать кросс-браузерную вёрстку. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Владею JavaScript (могу написать скрипт для формы логина, сделать слайдер, подключить интерактивную карту, и т.п.) Хорошее знание Adobe Photoshop: необходимый уровень знаний для вёрстки и создания макетов, и немного больше (рисование текстур, художественная обработка фото). Обладаю базовыми знаниями в области SEO, в области проектирования интерфейсов (UX / UI). В работе использую LESS и Grunt.</p>
-      </div>
-    </section>
--->
 
 
     <section class="resume" id="resume">
@@ -153,12 +144,14 @@
           <div class="personal__certificates">
             <h2 class="header--h2">Дополнительное обучение</h2>
             <h3 class="header--h3">Продвинутый интенсив:<br>создание веб-интерфейсов с помощью HTML и CSS </h3>
-            <a class="btn-small" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+            <a href="https://htmlacademy.ru/" target="_blank"><img src="img/logo-htmlacademy.png" width="200" height="48" title="HTML Academy" alt="HTML Academy" />
+            </a>
             <p class="text">Февраль 2015 - Апрель 2015</p>
             <p class="text">В процессе обучения на интенсиве я активно использовала те инструменты, которыми должен владеть каждый верстальщик-профессионал: препроцессоры, GitHub, методологии, средства автоматизации.</p>
             <a class="btn" href="https://drive.google.com/open?id=0B_QBmdIJugAhUVdBN0U2M1FuakU&amp;authuser=0" target="_blank">Просмотерть сертификат</a>
             <h3 class="header--h3">Создание веб-интерфейсов с помощью HTML и CSS</h3>
-            <a class="btn-small" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+            <a href="https://htmlacademy.ru/" target="_blank"><img src="img/logo-htmlacademy.png" width="200" height="48" title="HTML Academy" alt="HTML Academy" />
+            </a>
             <p class="text">Май 2014 - Июнь 2014</p>
             <p class="text">На этих курсах я приобрела навыки для эффективного решения типовых профессиональных задач HTML-верстальщика: научилась создавать современные веб-интерфейсы, работать с живым кодом, использовать новейшие технологии. Полученные знания позволили мне существенно повысить свою эффективность: быстрее и точнее оценивать сложность задач, самостоятельно создавать посадочные страницы и т.д.</p>
             <a class="btn" href="https://drive.google.com/open?id=0B_QBmdIJugAhTGpwYlZrbzh6a0U&amp;authuser=0" target="_blank">Просмотерть сертификат</a>
@@ -172,7 +165,10 @@
             <p class="text"><b>Среда:</b> HTML5, CSS3, LESS, Gunt, JavaScript, jQuery, GitHub, Adobe Photoshop, Inkspace, Brackets, Emmet</p>
             <br>
             <h3 class="header--h3">Инженер-разработчик интерфейсов</h3>
-            <a class="btn-small" href="http://www.gilbarco.com" target="_blank">Gilbarco-Autotank</a>
+
+            <a href="http://www.gilbarco.com" target="_blank"><img src="img/logo-gilbarco.png" width="200" height="48" title="Gilbarco Veeder-Root" alt="Gilbarco Veeder-Root" />
+            </a>
+
             <p class="text">Июль 2014 — по настоящее время</p>
             <p class="text"><b>Проект:</b> интегрированные решения для автоматических заправочных станций (Neste Oil, British Petroleum, Роснефть, Лукойл, Ашан)</p>
             <p class="text"><b>Среда:</b> HTML, CSS, JavaScript, Adobe Photoshop, agile-методология разработки (SCRUM)</p>
@@ -183,6 +179,15 @@
 
         </div>
 
+      </div>
+    </section>
+
+
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="header--h2">Обо мне</h2>
+        <p class="about__text">Я отлично знаю HTML5 и CSS3, умею грамотно применять семантические тэги для правильного анализа и индексирования страницы поисковиками. Знакома с различными методологиями вёрстки (предпочитаю использовать БЭМ). Умею делать и тестировать кросс-браузерную вёрстку. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Владею JavaScript (могу написать скрипт для формы логина, сделать слайдер, подключить интерактивную карту, и т.п.) Хорошее знание Adobe Photoshop: необходимый уровень знаний для вёрстки и создания макетов, и немного больше (рисование текстур, художественная обработка фото). Обладаю базовыми знаниями в области SEO, в области проектирования интерфейсов (UX / UI). В работе использую LESS и Grunt.</p>
       </div>
     </section>
 
