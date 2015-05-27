@@ -1,8 +1,14 @@
 .personal {
   margin: 0 auto 8rem;
+  display: none;
+  @media(min-width: @screen--small) {
+    display: block;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto 5rem;
+    position: relative;
   }
   &__certificates {
     width: 45%;

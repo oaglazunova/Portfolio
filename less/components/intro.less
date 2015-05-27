@@ -1,11 +1,17 @@
 .intro {
   background: @grey--bkg;
+  margin: 0 0 5rem;
+  @media(min-width: @screen--small) {
   margin: 0 0 10rem;
+    }
   &__text {
-    margin: 2em auto;
+    margin: 4rem auto;
     color: @text--secondary;
-    font-size: @font-size--big;
-    line-height: 2em;
+    font-size: @font-size;
+    line-height: 3rem;
     text-align: justify;
+    @media(min-width: @screen--small) {
+      font-size: @font-size--big;
+    }
   }
 }

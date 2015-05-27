@@ -1,21 +1,36 @@
 .header {
-  height: 775px;
+  height: 450px;
   background: #000 url("../img/bkg.jpg") 50% 50%/cover no-repeat fixed;
+  @media(min-width: @screen--medium) {
+    height: 775px;
+  }
   &__h1 {
-    margin: 25rem auto 0;
+    margin: 10rem auto 0;
     text-align: left;
     color: #fff;
-    font-size: @font-size--h1;
+    font-size: @font-size--h2+2;
     font-weight: 100;
     text-transform: uppercase;
-    animation-name: main-header;
+    animation-name: main-header--mobile;
     animation-duration: 4s;
     opacity: 1;
     transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+    @media(min-width: @screen--small) {
+      font-size: @font-size--h1;
+      margin: 25rem auto 0;
+      animation-name: main-header--mobile;
+    }
+    @media(min-width: @screen--medium) {
+      font-size: @font-size--h1;
+    }
+    @media(min-width: @screen--big) {}
     span {
       font-size: @font-size--h2;
       text-transform: none;
       font-weight: 400;
+      @media(min-width: @screen--small) {
+        font-size: @font-size--h2;
+      }
     }
   }
 }
@@ -28,6 +43,19 @@
   }
   to {
     margin: 25rem auto 0;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes main-header--mobile {
+  from {
+    margin: 0 auto 0;
+    opacity: 0;
+    transform: scale(.5);
+  }
+  to {
+    margin: 10rem auto 0;
     opacity: 1;
     transform: scale(1);
   }

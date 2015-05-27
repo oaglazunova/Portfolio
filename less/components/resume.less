@@ -1,9 +1,13 @@
 .resume {
-  margin: 0 0 60px 0;
+  margin: 0 auto;
   background: @grey--bkg;
   text-align: center;
   position: relative;
+  @media(min-width: @screen--small) {
+  margin: 0 0 4rem;
+    }
   &:after {
+  display: none;
     width: 0;
     height: 0;
     //   margin: 0 0 0 40px;
@@ -15,11 +19,14 @@
     bottom: -30px;
     left: 50%;
     transform: translateX(-100px);
+    @media(min-width: @screen--small) {
+  display: block;
+    }
   }
   & .text {
     text-align: center;
   }
   .btn {
-    margin: 1em 0 3em;
+    margin: 2rem 0 6rem;
   }
 }

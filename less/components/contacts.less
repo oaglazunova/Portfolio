@@ -2,6 +2,10 @@
   background: @grey--bkg;
   & .header--h2 {
     margin-top: 0;
+    font-size: @font-size--h3;
+    @media(min-width: @screen--small) {
+      font-size: @font-size--h2;
+    }
   }
   &__social {
     display: flex;
@@ -11,7 +15,7 @@
     padding: 10rem 0 4rem;
   }
   &__form {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     @media(min-width: @screen--medium) {
       width: 800px;
@@ -25,10 +29,8 @@
       outline: 0px none currentColor;
       transition: all 0.1s cubic-bezier(0.42, 0, 0.58, 1) 0;
     }
-    
     & input[type="text"],
     input[type="email"] {
-      
       width: 100%;
       padding: 1.5rem;
       margin: 1rem 0;

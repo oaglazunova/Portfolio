@@ -57,6 +57,7 @@ body {
   text-decoration: none;
   border: 1px solid @primary;
   transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  
   &:hover {
     color: #fff;
     background: @primary;
@@ -76,9 +77,12 @@ body {
   font-size: @font-size;
   font-weight: bold;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
   transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
   position: relative;
+  @media(min-width: @screen--small) {
+  text-transform: uppercase;
+  }
   &:active {
     color: @grey--300;
   }
@@ -91,7 +95,6 @@ body {
     height: 1px;
     background: @primary;
   }
-  
   &:hover:before {
     content: '';
     position: absolute;
@@ -110,9 +113,6 @@ body {
     height: 1px;
     background: @grey--300;
   }
-  
-  
-  
 }
 
 .highlight {
