@@ -36,9 +36,12 @@
 
 
 
-  <header class="header">
+  <header class="page-header">
     <div class="container">
-      <ul class="menu">
+
+
+      <a id="toggler" class="menu__toggler" href="#"><span></span></a>
+      <ul id="menu" class="menu">
         <li>
           <a class="menu__btn" href="#portfolio">Проекты</a>
         </li>
@@ -54,10 +57,36 @@
           <a class="menu__btn" href="#contacts">Контакты</a>
         </li>
       </ul>
-      <h1 class="header__h1">	  
+
+      <!--
+      <div id="header" class="page-header__menu">        
+        <a id="toggler" class="menu-toggler" href="#"><span></span></a>
+        <nav id="menu" class="main-nav">
+          <ul>
+            <li>
+              <a class="main-nav__btn" href="#"><span>Информация</span></a>
+            </li>
+            <li>
+              <a class="main-nav__btn" href="#"><span>Возможности</span></a>
+            </li>
+            <li>
+              <a class="main-nav__btn" href="#"><span>Отзывы</span></a>
+            </li>
+            <li>
+              <a class="main-nav__btn" href="#"><span>Стоимость</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      -->
+
+      <h1 class="page-header__h1">	  
         Ольга&ensp;Глазунова<br> 
         <span>Вёрстка&ensp;веб-страниц</span>
-        </h1>
+       </h1>
+
+      <a class="btn-round  btn-round--down" href="#intro">&#8595;</a>
+
     </div>
   </header>
 
@@ -65,7 +94,7 @@
 
   <div class="page-content">
 
-    <div class="intro">
+    <div class="intro" id="intro">
       <div class="container">
         <p class="intro__text">
           I am a web developer from Cape Breton, Nova Scotia and currently living in Halifax. I enjoy building everything from small business sites to rich interactive web apps. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here. Я начинающий верстальщик сайтов. Это мой красивый сайт. Мне нравится работать над разными проектами и воплощать идеи в реальность. Я сделала этот сайт в качестве тренировки в дизайне и вёрстке: это мой первый проект, самостоятельно разработанный с нуля. Меня увлекает дизайн и я планирую улучшать свои навыки в нём и дальше, но всё же свою карьеру я связываю с веб-программированием: в ближайших планах - подтянуть JavaScript до уровня “выше среднего” и начать изучать Python.</p>
@@ -202,7 +231,7 @@
       <div class="container">
 
         <div class="contacts__social">
-          <a class="btn   btn-social" href="skype:olga_glazunova_gvr?chat">Skype 
+          <a class="btn-social  btn-social--skype" href="skype:olga_glazunova_gvr?chat">Skype <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-codepen">
           <div class="btn-social__hover"> <svg width="57" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-skype"></use></svg></div>
         </a>
           <!--
@@ -210,13 +239,13 @@
           <div class="btn-social__hover"> <svg width="57" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-hangout"></use></svg></div>
         </a>  
           -->
-          <a class="btn   btn-social" href="https://www.facebook.com/profile.php?id=100009512325575" target="_blank">Facebook 
+          <a class="btn-social  btn-social--facebook" href="https://www.facebook.com/profile.php?id=100009512325575" target="_blank">Facebook 
           <div class="btn-social__hover"> <svg width="57" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg></div>
         </a>
-          <a class="btn   btn-social" href="https://github.com/oaglazunova" target="_blank">Github
+          <a class="btn-social  btn-social--github" href="https://github.com/oaglazunova" target="_blank">Github
           <div class="btn-social__hover"> <svg width="57" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg></div>
         </a>
-          <a class="btn   btn-social" href="http://codepen.io/Olga-G" target="_blank">Codepen
+          <a class="btn-social  btn-social--codepen" href="http://codepen.io/Olga-G" target="_blank">Codepen
           <div class="btn-social__hover"> <svg width="57" height="57"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-codepen"></use></svg></div>
         </a>
         </div>
@@ -256,7 +285,7 @@
     </div>
   </footer>
 
-  <script src="js/gen_validatorv31.js"></script>
+  <script src="js/script.js"></script>
   <script>
     // Code for validating the form
     // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
@@ -267,8 +296,6 @@
     frmvalidator.addValidation("email", "email", "Please enter a valid email address");
     frmvalidator.addValidation("message", "req", "Please enter a message");
   </script>
-  
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </body>
 

@@ -70,11 +70,40 @@
 
 .btn-social {
   position: relative;
+  height: 20px;
+  width: 30px;
+  padding: 30px;
+  margin: 0;
+  border: 0;
+  text-shadow: none;
+  color: transparent;
+  @media(min-width: @screen--small) {
+    .btn;
+    display: inline-block;
+    height: auto;
+    width: auto;
+  }
+  &--skype {
+    background: url("../img/icon-skype.png") 50% 50% no-repeat;
+    background-size: 80%;
+  }
+  &--facebook {
+    background: url("../img/icon-facebook.png") 50% 50% no-repeat;
+    background-size: 80%;
+  }
+  &--github {
+    background: url("../img/icon-github.png") 50% 50% no-repeat;
+    background-size: 90%;
+  }
+  &--codepen {
+    background: url("../img/icon-codepen.png") 50% 50% no-repeat;
+    background-size: 80%;
+  }
   &__hover {
     display: none;
   }
   &:hover .btn-social__hover {
-    display: block;
+    display: none;
     width: 100%;
     height: 100%;
     background: @primary;
@@ -85,6 +114,9 @@
     line-height: 50%;
     speak: none;
     border: 1px solid @primary;
+    @media(min-width: @screen--small) {
+      display: block;
+    }
   }
   &:active .btn-social__hover {
     background: @grey--300;
