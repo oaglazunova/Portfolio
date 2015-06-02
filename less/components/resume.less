@@ -1,10 +1,10 @@
 .resume {
+  padding: 5rem 0;
   margin: 0 auto;
   background: #000 url("../img/bkg.jpg") 50% 50%/cover no-repeat fixed;
   text-align: center;
   position: relative;
   @media(min-width: @screen--small) {
-    margin: 0 0 4rem;
     background: @grey--bkg;
   }
   &:after {
@@ -24,22 +24,19 @@
       display: block;
     }
   }
-  & .header--h2 {
+  & .header-h2 {
     color: @primary--light;
     @media(min-width: @screen--small) {
       color: @grey--600;
     }
   }
   & .text {
+    margin: 2rem;
     color: @grey--bkg;
     text-align: center;
-     @media(min-width: @screen--small) {
+    @media(min-width: @screen--small) {
       display: block;
-       
-  color: @text--secondary;
+      color: @text--secondary;
     }
-  }
-  .btn {
-    margin: 2rem 0 6rem;
   }
 }

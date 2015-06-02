@@ -509,7 +509,6 @@ body {
 .btn {
 	display: inline-block;
 	padding: 2rem 4rem;
-	margin: 2rem 0 4rem;
 	background: transparent;
 	color: #50bfb6;
 	font-size: 1.6rem;
@@ -534,7 +533,7 @@ body {
 .btn-small {
 	display: inline-block;
 	padding: .5rem 1rem;
-	margin: 1rem 0 2rem;
+	margin: 0 0 2rem;
 	color: rgba(0, 0, 0, 0.54);
 	font-size: 1.6rem;
 	font-weight: bold;
@@ -619,27 +618,26 @@ body {
 	text-decoration: none;
 }
 
-.header--h2,
-.header--h3 {
+.header-h2,
+.header-h3 {
 	display: block;
-	margin: 4rem 0 2rem;
+	margin: 0 0 2rem;
 	color: #757575;
 	font-weight: bold;
 	text-transform: uppercase;
-	line-height: 2;
+	line-height: 1.5;
 }
 
-.header--h2 {
+.header-h2 {
 	font-size: 2.8rem;
 	position: relative;
 }
 
-.header--h3 {
+.header-h3 {
 	font-size: 1.8rem;
 }
 
 .text {
-	margin: 0 0 2rem;
 	color: rgba(0, 0, 0, 0.54);
 	font-size: 1.6rem;
 	text-align: justify;
@@ -841,11 +839,10 @@ Mobile menu
 
 .intro {
 	background: #f2f2f2;
-	margin: 0 0 5rem;
+	padding: 6rem 0;
 }
 
 .intro__text {
-	margin: 4rem auto;
 	color: rgba(0, 0, 0, 0.54);
 	font-size: 1.6rem;
 	line-height: 3rem;
@@ -853,6 +850,7 @@ Mobile menu
 }
 
 .resume {
+	padding: 5rem 0;
 	margin: 0 auto;
 	background: #000000 url("../img/bkg.jpg") 50% 50% / cover no-repeat fixed;
 	text-align: center;
@@ -874,32 +872,34 @@ Mobile menu
 	transform: translateX(-100px);
 }
 
-.resume .header--h2 {
+.resume .header-h2 {
 	color: #a2d3cf;
 }
 
 .resume .text {
+	margin: 2rem;
 	color: #f2f2f2;
 	text-align: center;
 }
 
-.resume .btn {
-	margin: 2rem 0 6rem;
-}
-
 .personal {
-	margin: 0 auto 8rem;
+	padding: 5rem 0 8rem;
+	margin: 0 auto;
 	display: none;
 }
 
-.personal__wrapper {
+.personal__uni {
+	padding: 0 0 5rem;
+}
+
+.personal__columns-wrapper {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin: 0 auto 5rem;
+	margin: 0 auto;
 	position: relative;
 }
 
@@ -911,13 +911,38 @@ Mobile menu
 	width: 45%;
 }
 
+.personal .header-h2 {
+	margin: 0 0 4rem;
+}
+
+.personal__text-block {
+	margin: 0 0 6rem;
+}
+
+.personal__text-block:last-child {
+	margin: 0;
+}
+
+.personal__company-logo {
+	margin: 0 0 30px;
+}
+
 .personal img {
+	margin: 0 0 2rem;
 	vertical-align: super;
+}
+
+.personal .text {
+	margin: 0 0 2rem;
+}
+
+.portfolio {
+	padding: 5rem 0;
 }
 
 .portfolio__work {
 	display: block;
-	margin: 0 auto 5rem;
+	margin: 0 auto 8rem;
 	position: relative;
 }
 
@@ -931,16 +956,45 @@ Mobile menu
 	left: 0;
 }
 
-.portfolio .header--h3 {
-	position: absolute;
-	top: -2rem;
-	left: 0;
+.portfolio__work:last-child {
+	margin: 0 auto;
+}
+
+.portfolio__img-wrapper {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .portfolio__img {
-	height: 354px;
-	width: 100%;
+	display: block;
+	height: 100%;
 	margin: 4rem auto 0;
+	cursor: pointer;
+	transition-property: width; /* we specify, what properties we need to change*/
+	transition-duration: 300ms; /* we specify, with what speed it is necessary to return an image in its initial look*/
+	width: 100%;
+}
+
+.portfolio__img:focus {
+	height: 403px;
+	width: 672px;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	cursor: auto;
+}
+
+.portfolio__img:focus ~ .closed {
+	display: block;
+}
+
+.portfolio .closed {
+	display: none;
 }
 
 .portfolio__description {
@@ -948,14 +1002,33 @@ Mobile menu
 	margin: 0 auto;
 }
 
+.portfolio .header-h3 {
+	position: absolute;
+	top: -2rem;
+	left: 0;
+}
+
+.portfolio .text {
+	margin: 0 0 2rem;
+}
+
+.portfolio .highlight:last-child {
+	margin-bottom: 3rem;
+}
+
 .contacts {
+	padding: 8rem 0 10rem;
 	background: #f2f2f2;
 }
 
-.contacts .header--h2 {
+.contacts .header-h2 {
 	margin-top: 0;
 	font-size: 1.8rem;
 	text-transform: none;
+}
+
+.contacts .header-h3 {
+	margin: 3rem 0 1rem;
 }
 
 .contacts__social {
@@ -971,7 +1044,7 @@ Mobile menu
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 10rem 0 4rem;
+	padding: 0 0 4rem;
 }
 
 .contacts__form {
@@ -993,7 +1066,6 @@ Mobile menu
 .contacts__form input[type="email"] {
 	width: 100%;
 	padding: 1.5rem;
-	margin: 1rem 0;
 	background-color: #FFFFFF;
 	color: rgba(0, 0, 0, 0.87);
 	font-size: 1.8rem;
@@ -1004,7 +1076,7 @@ Mobile menu
 	width: 100%;
 	height: 250px;
 	padding: 1.5rem;
-	margin: 1rem 0;
+	margin: 0 0 6rem;
 	color: rgba(0, 0, 0, 0.87);
 	font-size: 1.8rem;
 	overflow: auto;
@@ -1015,7 +1087,6 @@ Mobile menu
 .contacts__form .btn {
 	display: block;
 	width: 100%;
-	margin: 6rem 0 10rem;
 }
 
 #success {
@@ -1032,7 +1103,7 @@ Mobile menu
 	position: relative;
 	height: 20px;
 	width: 30px;
-	padding: 30px;
+	padding: 0 30px;
 	margin: 0;
 	border: 0;
 	text-shadow: none;
@@ -1087,18 +1158,17 @@ Mobile menu
 }
 
 .page-footer {
-	padding: 2em 0 0;
+	padding: 4rem 0 2rem;
 	background: #757575;
 	color: #fff;
 }
 
 .page-footer__design {
-	margin: 0 0 2em;
+	margin: 0 0 2rem;
 	color: #a2d3cf;
 }
 
 .page-footer__copyright {
-	margin: 0 0 1em;
 	color: #a2d3cf;
 	text-align: center;
 }
@@ -1123,9 +1193,9 @@ Mobile menu
 
 .page-header__h1 {
 	font-size: 6.6rem;
-	margin: 25rem auto 0;
-	-webkit-animation-name: main-header--mobile;
-	animation-name: main-header--mobile;
+	margin: 12rem auto 0;
+	-webkit-animation-name: main-header--small;
+	animation-name: main-header--small;
 }
 
 .page-header__h1 span {
@@ -1151,16 +1221,11 @@ Mobile menu
 	display: none;
 }
 
-.intro {
-	margin: 0 0 10rem;
-}
-
 .intro__text {
 	font-size: 1.8rem;
 }
 
 .resume {
-	margin: 0 0 4rem;
 	background: #f2f2f2;
 }
 
@@ -1168,7 +1233,7 @@ Mobile menu
 	display: block;
 }
 
-.resume .header--h2 {
+.resume .header-h2 {
 	color: #757575;
 }
 
@@ -1193,28 +1258,32 @@ Mobile menu
 .portfolio__work:not(:last-child):after {
 	width: 50%;
 	left: 25%;
-	bottom: -4rem;
+	bottom: -3rem;
 }
 
-.portfolio .header--h3 {
-	position: relative;
+.portfolio__img-wrapper {
+	width: 450px;
 }
 
 .portfolio__img {
-	width: 600px;
+	width: 450px;
 }
 
 .portfolio__description {
 	width: 400px;
 }
 
-.contacts .header--h2 {
+.portfolio .header-h3 {
+	position: relative;
+	top: 0;
+}
+
+.contacts .header-h2 {
 	font-size: 2.8rem;
 }
 
 .btn-social {
 	padding: 2rem 4rem;
-	margin: 2rem 0 4rem;
 	background: transparent;
 	color: #50bfb6;
 	font-size: 1.6rem;
@@ -1226,6 +1295,7 @@ Mobile menu
 	display: inline-block;
 	height: auto;
 	width: auto;
+	margin: 0;
 }
 
 .btn-social:hover {
@@ -1256,7 +1326,13 @@ Mobile menu
 }
 
 .page-header__h1 {
+	margin: 25rem auto 0;
 	font-size: 6.6rem;
+}
+
+.portfolio__img:focus {
+	height: 807px;
+	width: 1344px;
 }
 
 .contacts__form {
@@ -1338,6 +1414,42 @@ from {
 
 to {
 	margin: 2rem auto 0;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+}
+
+@-webkit-keyframes main-header--small {
+
+from {
+	margin: -10rem auto 0;
+	opacity: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+to {
+	margin: 12rem auto 0;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+}
+
+@keyframes main-header--small {
+
+from {
+	margin: -10rem auto 0;
+	opacity: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+to {
+	margin: 12rem auto 0;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);

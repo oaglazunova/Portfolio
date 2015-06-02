@@ -1,8 +1,11 @@
 .portfolio {
+  padding: 5rem 0;
+  
   &__work {
     display: block;
-    margin: 0 auto 5rem;
+    margin: 0 auto 8rem;
     position: relative;
+    
     @media(min-width: @screen--small) {
       display: flex;
       justify-content: space-around;
@@ -15,34 +18,104 @@
       background: rgba(0, 0, 0, .12);
       bottom: -2rem;
       left: 0;
+      
       @media(min-width: @screen--small) {
         width: 50%;
         left: 25%;
-        bottom: -4rem;
+        bottom: -3rem;
       }
     }
-  }
-  & .header--h3 {
-    position: absolute;
-    top: -2rem;
-    left: 0;
-    @media(min-width: @screen--small) {
-      position: relative;
+    &:last-child {
+      margin: 0 auto;
     }
   }
+  
+    
+    &__img-wrapper {
+      
+    height: 100%;    
+    width: 100%;
+      margin: 0 auto;
+      @media(min-width: @screen--small) {
+      width: 450px;
+    }
+    }
+  
+
   &__img {
-    height: 354px;
+    display: block;
+    height: 100%;    
     width: 100%;
     margin: 4rem auto 0;
-    @media(min-width: @screen--small) {
-      width: 600px;
+    cursor: pointer;
+    
+  transition-property: width; /* we specify, what properties we need to change*/
+   transition-duration: 300ms; /* we specify, with what speed it is necessary to return an image in its initial look*/ 
+    
+     width: 100%;
+     @media(min-width: @screen--small) {
+      width: 450px;
     }
-  }
+    
+    &:focus {
+      height: 403px;
+      width: 672px;
+      margin: auto;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      
+    cursor: auto;
+      
+      @media(min-width: @screen--medium) {
+      height: 807px;
+      width: 1344px;
+    }
+      
+    }
+    
+    &:focus~.closed{
+    display: block;
+      
+}
+}  
+  .closed {
+    display: none;
+    
+}
+
+  
+    
+    
+  
   &__description {
     width: 100%;
     margin: 0 auto;
+    
     @media(min-width: @screen--small) {
       width: 400px;
+    }
+  }
+  & .header-h3 {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    
+    @media(min-width: @screen--small) {
+      position: relative;
+      top: 0;
+    }
+  }
+  & .text {
+    margin: 0 0 2rem;
+  }
+  & .highlight {
+    
+    &:last-child {
+      margin-bottom: 3rem;
     }
   }
 }
