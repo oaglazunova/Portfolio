@@ -732,7 +732,7 @@ body {
 	left: 0;
 	bottom: 5px;
 	width: 100%;
-	height: 4px;
+	height: 1px;
 	background: #50bfb6;
 }
 
@@ -877,7 +877,7 @@ Mobile menu
 }
 
 .resume .text {
-	margin: 2rem;
+	margin: 0 0 3rem;
 	color: #f2f2f2;
 	text-align: center;
 }
@@ -942,7 +942,7 @@ Mobile menu
 
 .portfolio__work {
 	display: block;
-	margin: 0 auto 8rem;
+	margin: 0 auto 10rem;
 	position: relative;
 }
 
@@ -963,38 +963,55 @@ Mobile menu
 .portfolio__img-wrapper {
 	height: 100%;
 	width: 100%;
-	margin: 0 auto;
+	max-width: 450px;
+	margin: 0 auto 2rem;
+}
+
+.portfolio__close-img {
+	display: none;
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	cursor: pointer;
+	font-size: 70px;
+	font-weight: lighter;
+	text-align: center;
+	text-shadow: 0 0 5px #50bfb6;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
 }
 
 .portfolio__img {
 	display: block;
 	height: 100%;
-	margin: 4rem auto 0;
-	cursor: pointer;
-	transition-property: width; /* we specify, what properties we need to change*/
-	transition-duration: 300ms; /* we specify, with what speed it is necessary to return an image in its initial look*/
 	width: 100%;
+	margin: 4rem auto 0;
+	pointer-events: none;
+	cursor: default;
 }
 
 .portfolio__img:focus {
-	height: 403px;
-	width: 672px;
+	min-height: 403px;
+	min-width: 672px;
+	max-height: 540px;
+	max-width: 900px;
 	margin: auto;
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	outline: 1px solid #50bfb6;
 	z-index: 1;
 	cursor: auto;
 }
 
-.portfolio__img:focus ~ .closed {
+.portfolio__img:focus ~ .portfolio__close-img {
 	display: block;
-}
-
-.portfolio .closed {
-	display: none;
 }
 
 .portfolio__description {
@@ -1004,7 +1021,7 @@ Mobile menu
 
 .portfolio .header-h3 {
 	position: absolute;
-	top: -2rem;
+	top: -4rem;
 	left: 0;
 }
 
@@ -1101,7 +1118,7 @@ Mobile menu
 
 .btn-social {
 	position: relative;
-	height: 20px;
+	height: 50px;
 	width: 30px;
 	padding: 0 30px;
 	margin: 0;
@@ -1188,7 +1205,7 @@ Mobile menu
 }
 
 .page-header {
-	height: 500px;
+	height: 600px;
 }
 
 .page-header__h1 {
@@ -1215,6 +1232,10 @@ Mobile menu
 
 .menu__btn {
 	width: auto;
+}
+
+.menu__btn:hover:before {
+	height: 4px;
 }
 
 .menu__toggler {
@@ -1244,38 +1265,6 @@ Mobile menu
 
 .personal {
 	display: block;
-}
-
-.portfolio__work {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-justify-content: space-around;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
-}
-
-.portfolio__work:not(:last-child):after {
-	width: 50%;
-	left: 25%;
-	bottom: -3rem;
-}
-
-.portfolio__img-wrapper {
-	width: 450px;
-}
-
-.portfolio__img {
-	width: 450px;
-}
-
-.portfolio__description {
-	width: 400px;
-}
-
-.portfolio .header-h3 {
-	position: relative;
-	top: 0;
 }
 
 .contacts .header-h2 {
@@ -1315,24 +1304,64 @@ Mobile menu
 
 }
 
+@media (min-width: 1000px) {
+
+.portfolio__work {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.portfolio__work:not(:last-child):after {
+	width: 50%;
+	left: 25%;
+	bottom: -3rem;
+}
+
+.portfolio__img-wrapper {
+	width: 450px;
+	margin: 0 auto;
+}
+
+.portfolio__img {
+	pointer-events: all;
+	cursor: pointer;
+}
+
+.portfolio__description {
+	width: 400px;
+}
+
+.portfolio .header-h3 {
+	position: relative;
+	top: 0;
+}
+
+}
+
 @media (min-width: 1200px) {
 
 .container {
 	width: 900px;
 }
 
-.page-header {
-	height: 775px;
+.page-header__h1 {
+	margin: 18rem auto 0;
+	font-size: 6.6rem;
+	-webkit-animation-name: main-header--medium;
+	animation-name: main-header--medium;
 }
 
-.page-header__h1 {
-	margin: 25rem auto 0;
-	font-size: 6.6rem;
+.portfolio__close-img {
+	padding: 0 0 650px 980px;
 }
 
 .portfolio__img:focus {
-	height: 807px;
-	width: 1344px;
+	height: 660px;
+	width: 1100px;
 }
 
 .contacts__form {
@@ -1345,6 +1374,26 @@ Mobile menu
 
 .container {
 	width: 1000px;
+}
+
+.page-header {
+	height: 775px;
+}
+
+.page-header__h1 {
+	margin: 25rem auto 0;
+	font-size: 6.6rem;
+	-webkit-animation-name: main-header;
+	animation-name: main-header;
+}
+
+.portfolio__close-img {
+	padding: 0 0 800px 1180px;
+}
+
+.portfolio__img:focus {
+	height: 807px;
+	width: 1344px;
 }
 
 }
@@ -1450,6 +1499,42 @@ from {
 
 to {
 	margin: 12rem auto 0;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+}
+
+@-webkit-keyframes main-header--medium {
+
+from {
+	margin: -10rem auto 0;
+	opacity: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+to {
+	margin: 18rem auto 0;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+}
+
+@keyframes main-header--medium {
+
+from {
+	margin: -10rem auto 0;
+	opacity: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+to {
+	margin: 18rem auto 0;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
