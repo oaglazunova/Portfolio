@@ -81,11 +81,13 @@
   border: 0;
   text-shadow: none;
   color: transparent;
+  
   @media(min-width: @screen--small) {
-    .btn;
+    .btn;    
     display: inline-block;
     height: auto;
     width: auto;
+    padding: 0 4rem;
     margin: 0;
   }
   &--skype {
@@ -106,6 +108,7 @@
   }
   &__hover {
     display: none;
+    padding: 2.5rem 0 0;
   }
   &:hover .btn-social__hover {
     display: none;
@@ -116,7 +119,7 @@
     top: 0;
     left: 0;
     text-align: center;
-    line-height: 50%;
+   line-height: 50%;
     speak: none;
     border: 1px solid @primary;
     @media(min-width: @screen--small) {
@@ -128,6 +131,10 @@
     border: 1px solid @grey--300;
   }
   & svg {
-    fill: #fff;
+    display: none;
+    fill: @primary;
+    @media(min-width: @screen--small) {
+      display: block;
+    }
   }
 }
