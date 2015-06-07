@@ -510,18 +510,18 @@ body {
 	display: inline-block;
 	padding: 2rem 4rem;
 	background: transparent;
-	color: #50bfb6;
+	color: #44aea5;
 	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-	border: 1px solid #50bfb6;
+	border: 1px solid #44aea5;
 	transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
 }
 
 .btn:hover {
 	color: #fff;
-	background: #50bfb6;
+	background: #44aea5;
 }
 
 .btn:active {
@@ -554,7 +554,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 1px;
-	background: #50bfb6;
+	background: #44aea5;
 }
 
 .btn-small:hover:before {
@@ -564,7 +564,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 3px;
-	background: #3ba199;
+	background: #368982;
 }
 
 .btn-small:active:before {
@@ -586,7 +586,7 @@ body {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	border: 2px solid #50bfb6;
+	border: 2px solid #44aea5;
 	border-radius: 50%;
 	position: relative;
 }
@@ -597,7 +597,7 @@ body {
 	height: 25px;
 	width: 25px;
 	margin: 0 auto;
-	border: 2px solid #50bfb6;
+	border: 2px solid #44aea5;
 	border-left: none;
 	border-top: none;
 	-webkit-transform: rotate(45deg);
@@ -612,7 +612,7 @@ body {
 	display: inline-block;
 	padding: 5px 10px;
 	margin: 0 1rem 2rem 0;
-	background: #50bfb6;
+	background: #44aea5;
 	color: #fff;
 	font-size: 1.6rem;
 	text-decoration: none;
@@ -645,7 +645,7 @@ body {
 
 .page-header {
 	height: 100vh;
-	background: #000000 url("../img/bkg--medium.jpg") 50% 50% no-repeat fixed;
+	background: #000000 url("../img/bkg--small.jpg") no-repeat center center;
 }
 
 .page-header__h1 {
@@ -719,7 +719,7 @@ body {
 	bottom: 5px;
 	width: 100%;
 	height: 1px;
-	background: #a2d3cf;
+	background: #90c8c3;
 }
 
 .menu__btn:active {
@@ -733,7 +733,7 @@ body {
 	bottom: 5px;
 	width: 100%;
 	height: 1px;
-	background: #50bfb6;
+	background: #44aea5;
 }
 
 .menu__btn:active:before {
@@ -775,7 +775,7 @@ Mobile menu
 	vertical-align: bottom;
 	width: 100%;
 	height: .3rem;
-	background: #a2d3cf;
+	background: #90c8c3;
 	border-radius: .2rem;
 	position: relative;
 	transition: background .3s .5s;
@@ -785,7 +785,7 @@ Mobile menu
 .menu__toggler > span:after {
 	width: 100%;
 	height: .3rem;
-	background: #a2d3cf;
+	background: #90c8c3;
 	border-radius: .2rem;
 	position: absolute;
 	left: 0;
@@ -852,7 +852,8 @@ Mobile menu
 .resume {
 	padding: 5rem 0;
 	margin: 0 auto;
-	background: #000000 url("../img/bkg--medium.jpg") 50% 50% no-repeat fixed;
+	background: #000000 url("../img/bkg--small.jpg") no-repeat center center;
+	background-size: 700px 467px;
 	text-align: center;
 	position: relative;
 }
@@ -873,7 +874,7 @@ Mobile menu
 }
 
 .resume .header-h2 {
-	color: #a2d3cf;
+	color: #90c8c3;
 }
 
 .resume .text {
@@ -968,7 +969,7 @@ Mobile menu
 	bottom: 0;
 	left: 0;
 	right: 0;
-	outline: 1px solid #50bfb6;
+	outline: 1px solid #44aea5;
 	z-index: 1;
 	cursor: auto;
 	border: 0;
@@ -1074,7 +1075,7 @@ Mobile menu
 .contacts__form input[type="email"]:focus,
 .contacts__form select:focus,
 .contacts__form textarea:focus {
-	box-shadow: 0px 0px 0px 1px #50bfb6;
+	box-shadow: 0px 0px 0px 1px #44aea5;
 	outline: 0px none currentColor;
 	transition: all 0.1s cubic-bezier(0.42, 0, 0.58, 1) 0;
 }
@@ -1161,14 +1162,14 @@ Mobile menu
 	display: none;
 	width: 100%;
 	height: 100%;
-	background: #50bfb6;
+	background: #44aea5;
 	position: absolute;
 	top: 0;
 	left: 0;
 	text-align: center;
 	line-height: 50%;
 	speak: none;
-	border: 1px solid #50bfb6;
+	border: 1px solid #44aea5;
 }
 
 .btn-social:active .btn-social__hover {
@@ -1178,7 +1179,7 @@ Mobile menu
 
 .btn-social svg {
 	display: none;
-	fill: #50bfb6;
+	fill: #44aea5;
 }
 
 .thanks__wrapper {
@@ -1206,11 +1207,11 @@ Mobile menu
 
 .page-footer__design {
 	margin: 0 0 2rem;
-	color: #a2d3cf;
+	color: #90c8c3;
 }
 
 .page-footer__copyright {
-	color: #a2d3cf;
+	color: #90c8c3;
 	text-align: center;
 }
 
@@ -1230,6 +1231,8 @@ Mobile menu
 
 .page-header {
 	height: 600px;
+	background: #000000 url("../img/bkg--medium.jpg") no-repeat center center;
+	background-size: 1024px 600px;
 }
 
 .page-header__h1 {
@@ -1377,6 +1380,12 @@ Mobile menu
 	width: 900px;
 }
 
+.page-header {
+	background: #000000 url("../img/bkg--lg.jpg") no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 .page-header__h1 {
 	margin: 18rem auto 0;
 	font-size: 6.6rem;
@@ -1392,12 +1401,12 @@ Mobile menu
 .btn-social {
 	padding: 2rem 4rem;
 	background: transparent;
-	color: #50bfb6;
+	color: #44aea5;
 	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-	border: 1px solid #50bfb6;
+	border: 1px solid #44aea5;
 	transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
 	display: inline-block;
 	height: auto;
@@ -1408,7 +1417,7 @@ Mobile menu
 
 .btn-social:hover {
 	color: #fff;
-	background: #50bfb6;
+	background: #44aea5;
 }
 
 .btn-social:active {
