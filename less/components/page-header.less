@@ -1,14 +1,18 @@
 .page-header {
   height: 100vh;
-  background: #000 url("../img/bkg--small.jpg") no-repeat center center;  
+  background: #000 url("../img/bkg--small.jpg") no-repeat center center; 
+  
+    background-size: cover;
   //  background-attachment: fixed;
  //   background-size: cover;
+  position: relative;
   
   @media(min-width: @screen--small) {
     height: 600px;
     background: #000 url("../img/bkg--medium.jpg") no-repeat center center;
     background-size: 1024px 600px;
   }
+ 
    @media(min-width: @screen--medium) {
      background: #000 url("../img/bkg--lg.jpg") no-repeat center center;
      background-attachment: fixed;
@@ -21,10 +25,10 @@
   }
   &__h1 {
     margin: 2rem auto 0;
-    text-align: left;
     color: #fff;
     font-size: @font-size--h2+2;
     font-weight: 100;
+    text-align: left;
     text-transform: uppercase;
     animation-name: main-header--mobile;
     animation-duration: 4s;
@@ -32,8 +36,8 @@
     transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
     
     @media(min-width: @screen--small) {
-      font-size: @font-size--h1;
       margin: 12rem auto 0;
+      font-size: @font-size--h1;
       animation-name: main-header--small;
     }
     @media(min-width: @screen--medium) {

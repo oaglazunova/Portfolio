@@ -646,14 +646,16 @@ body {
 .page-header {
 	height: 100vh;
 	background: #000000 url("../img/bkg--small.jpg") no-repeat center center;
+	background-size: cover;
+	position: relative;
 }
 
 .page-header__h1 {
 	margin: 2rem auto 0;
-	text-align: left;
 	color: #fff;
 	font-size: 4.8rem;
 	font-weight: 100;
+	text-align: left;
 	text-transform: uppercase;
 	-webkit-animation-name: main-header--mobile;
 	animation-name: main-header--mobile;
@@ -1236,8 +1238,8 @@ Mobile menu
 }
 
 .page-header__h1 {
-	font-size: 6.6rem;
 	margin: 12rem auto 0;
+	font-size: 6.6rem;
 	-webkit-animation-name: main-header--small;
 	animation-name: main-header--small;
 }
