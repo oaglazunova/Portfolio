@@ -1,12 +1,20 @@
 .portfolio {
   padding: 10rem 0 5rem;
+  
+  @media(min-width: @screen--medium) {
+    padding: 20rem 0 20rem;
+  }
   &__work {
     display: block;
     margin: 0 auto 10rem;
     position: relative;
+    
     @media(min-width: @screen--small-x) {
       display: flex;
       justify-content: space-around;
+    }
+    @media(min-width: @screen--medium) {
+      margin: 0 auto 20rem;
     }
     &:not(:last-child):after {
       content: '';
@@ -16,10 +24,14 @@
       background: rgba(0, 0, 0, .12);
       bottom: -2rem;
       left: 0;
+      
       @media(min-width: @screen--small-x) {
         width: 50%;
         left: 25%;
         bottom: -3rem;
+      }
+      @media(min-width: @screen--medium) {
+        bottom: -8rem;
       }
     }
     &:last-child {
@@ -38,6 +50,7 @@
     z-index: 1;
     cursor: auto;
     .hidden-text;
+    
     @media(min-width: @screen--medium) {
       height: 660px;
       width: 1099px;
@@ -48,18 +61,21 @@
     }
     &--suomi {
       background: url("../img/work-suomi--medium.jpg") 50% 50% no-repeat;
+      
       @media(min-width: @screen--lg) {
         background: url("../img/work-suomi--lg.jpg") 50% 50% no-repeat;
       }
     }
     &--pink {
       background: url("../img/work-pink--medium.jpg") 50% 50% no-repeat;
+      
       @media(min-width: @screen--lg) {
         background: url("../img/work-pink--lg.jpg") 50% 50% no-repeat;
       }
     }
     &--tm {
       background: url("../img/work-tm--medium.jpg") 50% 50% no-repeat;
+      
       @media(min-width: @screen--lg) {
         background: url("../img/work-tm--lg.jpg") 50% 50% no-repeat;
       }
@@ -71,6 +87,7 @@
     margin: 0 auto 2rem;
     pointer-events: none;
     cursor: default;
+    
     @media(min-width: @screen--small) {
       height: 270px;
       width: 450px;
@@ -79,20 +96,26 @@
       pointer-events: all;
       cursor: pointer;
     }
+    @media(min-width: @screen--medium) {
+      margin: 4rem auto 2rem;
+    }
     &--suomi {
       background: url("../img/work-suomi--mobile.jpg") 50% 50% no-repeat;
+      
       @media(min-width: @screen--small) {
         background: url("../img/work-suomi--small.jpg") 50% 50% no-repeat;
       }
     }
     &--pink {
       background: url("../img/work-pink--mobile.jpg") 50% 50% no-repeat;
+      
       @media(min-width: @screen--small) {
         background: url("../img/work-pink--small.jpg") 50% 50% no-repeat;
       }
     }
     &--tm {
       background: url("../img/work-tm--mobile.jpg") 50% 50% no-repeat;
+      
       @media(min-width: @screen--small) {
         background: url("../img/work-tm--small.jpg") 50% 50% no-repeat;
       }
@@ -104,6 +127,7 @@
   &__description {
     width: 100%;
     margin: 0 auto;
+    
     @media(min-width: @screen--small-x) {
       width: 400px;
     }
@@ -112,6 +136,7 @@
     position: absolute;
     top: -4rem;
     left: 0;
+    
     @media(min-width: @screen--small-x) {
       position: relative;
       top: 0;
@@ -121,6 +146,7 @@
     margin: 0 0 2rem;
   }
   & .highlight {
+    
     &:last-child {
       margin-bottom: 3rem;
     }

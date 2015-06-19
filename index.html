@@ -41,6 +41,7 @@
 
   <header class="page-header">
     <div class="container">
+     <div class="menu-wrapper">
       <a id="toggler" class="menu__toggler" href="#"><span></span></a>
       <ul id="menu" class="menu">
         <li>
@@ -53,6 +54,7 @@
           <a class="menu__btn" href="#contacts">Контакты</a>
         </li>
       </ul>
+      </div>
       <h1 class="page-header__h1">	  
         Ольга&ensp;Глазунова<br> 
         <span>Вёрстка&ensp;веб-страниц</span>
@@ -67,7 +69,7 @@
 
     <div class="intro" id="intro">
       <div class="container">
-        <p class="intro__text">Я веб-разработчик из Санкт-Петербурга. Я отлично знаю HTML5 и CSS3, могу грамотно применять семантические тэги для правильного анализа и индексирования страницы поисковиками. Умею делать и тестировать кросс-браузерную вёрстку. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Хорошо владею Adobe Photoshop: необходимый уровень знаний для вёрстки и создания/редактирования макетов. В работе использую LESS (в связке с Grunt). Знакома с различными методологиями вёрстки (предпочитаю БЭМ в модификации Галлахера).Владею JavaScript. Обладаю базовыми знаниями в области SEO, в области проектирования интерфейсов (UX/UI).</p>
+        <p class="intro__text">Привет! Я верстальщик и веб-разработчик из Санкт-Петербурга. Отлично знаю <span class="bold">HTML5/CSS3</span>, могу грамотно применять <span class="bold">семантические тэги</span> для правильного анализа и индексирования страницы поисковиками. Люблю писать красивый код - красивый как с точки зрения логической структуры, так и оформления. Всегда забочусь о гибкости вёрстки и удобстве её дальнейшего использования. Верстаю в максимальном соответствии с макетом. Умею делать и тестировать <span class="bold">кросс-браузерную вёрстку</span>. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Хорошо владею Adobe Photoshop. В работе использую <span class="bold">LESS</span> (в связке с Grunt). Знакома с различными методологиями вёрстки (предпочитаю <span class="bold">БЭМ в модификации Галлахера</span>). Владею <span class="bold">JavaScript</span>. Обладаю базовыми знаниями в области <span class="bold">SEO</span>, в области проектирования интерфейсов (<span class="bold">UX/UI</span>).</p>
       </div>
     </div>
 
@@ -82,7 +84,7 @@
           </div>
           <div class="portfolio__description">
             <h3 class="header-h3">Такси в Финляндию</h3>
-            <p class="text">Лэндинг для компании, занимающейся организацией поездок в Финляндию, с возможностью заказа машины через сайт. Я делала и дизайн, и вёрстку. Целью было сделать страницу лаконичной и в то же время функциональной.</p>
+            <p class="text">Лэндинг для компании, занимающейся организацией поездок в Финляндию, с возможностью заказа машины через сайт. Я делала и дизайн, и вёрстку. Целью было сделать страницу максимально лаконичной, но в то же время запоминающейся и функциональной. </p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">PHP</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
             </div>
@@ -98,7 +100,7 @@
           </div>
           <div class="portfolio__description">
             <h3 class="header-h3">PINK</h3>
-            <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов. На курсах нам преподавали особенности адаптивного дизайна, а также автоматизацию в вёрстке, и все эти знания применила на практике, работая над выпускным проектом. Самой захватывающей вещью для меня оказался Less: он превратил CSS из мешанины свойств в прекрасно структурированный и чёткий код. А возможность использовать mixin'ы и переменные очень облегчает работу.</p>
+            <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов. На курсах нам преподавали особенности адаптивного дизайна, а также автоматизацию в вёрстке, и все эти знания я применила на практике, работая над выпускным проектом. Самой захватывающей вещью для меня оказался Less: он превращает CSS из мешанины свойств в прекрасно структурированный и чёткий код. А возможность использовать mixin'ы и переменные очень облегчает работу.</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Google Maps API</span><span class="highlight">Responsive layout</span>
             </div>
@@ -132,7 +134,7 @@
     <section class="resume" id="resume">
       <div class="container">
         <h2 class="header-h2">Резюме</h2>
-        <p class="text">По ссылке ниже вы можете загрузить моё полное резюме в формате PDF:</p>
+        <p class="text">По этой ссылке вы можете загрузить моё полное резюме в формате PDF:</p>
         <a class="btn" href="CV_GlazunovaOA_ru.pdf" target="_blank">Скачать резюме</a>
       </div>
     </section>
@@ -259,10 +261,7 @@
               <span class="header-h3">Текст сообщения:</span>
             </label>
             <textarea id="message" name="message" placeholder="Опишите ваш проект" rows="10" tabindex="3"></textarea>
-            <input class="btn" type="submit" name="submit" value="Отправить сообщение">
-            <div id="success" class="">
-              <strong>Спасибо!</strong> Ваше сообщение было успешно отправлено!
-            </div>
+            <input class="btn" type="submit" name="submit" value="Отправить сообщение">            
           </form>
         </div>
 
@@ -273,8 +272,7 @@
 
   <footer class="page-footer">
     <div class="container">
-      <p class="page-footer__design">This responsive web site has been designed, developed, and maintained by Olga Glazunova. It’s built with HTML5, CSS3 and some JavaScript and optimized for a fast page load. Current Average load is 1.4s.
-        <br>Galymzhan Abdugalimov, thank you very much for the photo I used in the header!</p>
+      <p class="page-footer__design">This responsive web site has been designed, developed, and maintained by Olga Glazunova. It’s built with HTML5, CSS3 and some JavaScript and optimized for a fast page load. Current Average load is 1.4s. Galymzhan Abdugalimov, thank you very much for the photo I used in the header!</p>
       <p class="page-footer__copyright">&#169; 2015 Ольга Глазунова</p>
     </div>
   </footer>

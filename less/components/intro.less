@@ -1,6 +1,9 @@
 .intro {
   background: @grey--bkg;
   padding: 6rem 0;
+  @media(min-width: @screen--medium) {
+    padding: 8rem 0;
+  }
   &__text {
     color: @text--secondary;
     font-size: @font-size;
@@ -8,6 +11,10 @@
     text-align: justify;
     @media(min-width: @screen--small) {
       font-size: @font-size--big;
+    }
+    & .bold {
+      color: @primary--dark;
+      font-weight: 500;
     }
   }
 }
