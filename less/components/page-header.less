@@ -9,7 +9,7 @@
     background: #000 url("../img/bkg--medium.jpg") no-repeat center center;
     background-size: 1024px 600px;
   }
-  @media(min-width: @screen--medium) {
+  @media(min-width: @screen--small-x) {
     background: #000 url("../img/bkg--lg.jpg") no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
@@ -31,12 +31,12 @@
     transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
     
     @media(min-width: @screen--small) {
-      margin: 12rem auto 0;
+      margin: 20rem auto 0;
       font-size: @font-size--h1;
       animation-name: main-header--small;
     }
     @media(min-width: @screen--medium) {
-      margin: 18rem auto 0;
+      margin: 25rem auto 0;
       font-size: @font-size--h1;
       animation-name: main-header--medium;
     }
@@ -49,6 +49,7 @@
       font-size: @font-size--h2;
       text-transform: none;
       font-weight: 400;
+      
       @media(min-width: @screen--small) {
         font-size: @font-size--h2;
       }
@@ -63,15 +64,15 @@
 }
 
 .menu-wrapper {
-   @media(min-width: @screen--small) {
-     background: #000;
-     
-left: 0;
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 20;
-   }
+  
+  @media(min-width: @screen--small) {
+    background: rgba(0,0,0, .8);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+  }
 }
 
 .menu {
@@ -79,9 +80,6 @@ z-index: 20;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
- 
-  
   margin: 0 auto;
   transition: top .3s .6s, transform .3s;
   transform: translateY(-200px);
@@ -90,13 +88,10 @@ z-index: 20;
   @media(min-width: @screen--small) {
     justify-content: flex-end;
     flex-wrap: nowrap;
-    
-     min-width: @screen--small;
+    min-width: @screen--small;
     max-width: 1000px;
-    
     transform: translateY(0);
   }
-  
   &--vertical {
     transform: translateY(0);
   }
@@ -118,7 +113,7 @@ z-index: 20;
       content: '';
       position: absolute;
       left: 0;
-      bottom: 5px;
+      bottom: 8px;
       width: 100%;
       height: 1px;
       background: @primary--light;
@@ -150,8 +145,8 @@ z-index: 20;
     }
   }
 }
-
 /* Mobile menu */
+
 .menu__toggler {
   display: flex;
   align-items: center;
@@ -163,7 +158,6 @@ z-index: 20;
   right: 10px;
   top: 10px;
   z-index: 2;
-  
   @media(min-width: @screen--small) {
     display: none;
   }
@@ -176,7 +170,6 @@ z-index: 20;
     border-radius: .2rem;
     position: relative;
     transition: background .3s .5s;
-    
     &:before, &:after {
       width: 100%;
       height: .3rem;
@@ -199,7 +192,6 @@ z-index: 20;
     > span {
       transition: background .3s 0;
       background: transparent;
-      
       &:before, &:after {
         transition: top .3s, transform .3s .5s;
         top: 0;
