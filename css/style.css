@@ -1220,6 +1220,7 @@ body {
 	padding: 4rem 0 2rem;
 	background: #757575;
 	color: #fff;
+	text-align: justify;
 }
 
 .page-footer__design {
@@ -1264,7 +1265,7 @@ body {
 }
 
 .menu-wrapper {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.7);
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -1426,7 +1427,7 @@ body {
 }
 
 .intro {
-	padding: 8rem 0;
+	padding: 6rem 0 8rem;
 }
 
 .resume {
@@ -1534,12 +1535,12 @@ body {
 }
 
 .page-header {
-	height: 820px;
+	height: 720px;
 	background: #000000 url("../img/bkg--lg.jpg") 50% 50% no-repeat fixed;
 }
 
 .page-header__h1 {
-	margin: 35rem auto 0;
+	margin: 30rem auto 0;
 	font-size: 6.6rem;
 	-webkit-animation-name: main-header;
 	animation-name: main-header;
@@ -1574,7 +1575,7 @@ from {
 }
 
 to {
-	margin: 35rem auto 0;
+	margin: 30rem auto 0;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
@@ -1592,7 +1593,7 @@ from {
 }
 
 to {
-	margin: 35rem auto 0;
+	margin: 30rem auto 0;
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
