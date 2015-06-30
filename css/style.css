@@ -511,18 +511,18 @@ body {
 	display: inline-block;
 	padding: 2rem 4rem;
 	background: transparent;
-	color: #50bfb6;
+	color: #44a099;
 	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-	border: 1px solid #50bfb6;
+	border: 1px solid #44a099;
 	transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
 }
 
 .btn:hover {
 	color: #fff;
-	background: #50bfb6;
+	background: #44a099;
 }
 
 .btn:active {
@@ -555,7 +555,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 1px;
-	background: #50bfb6;
+	background: #44a099;
 }
 
 .btn-small:hover:before {
@@ -565,7 +565,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 3px;
-	background: #3ba199;
+	background: #357c77;
 }
 
 .btn-small:active:before {
@@ -587,7 +587,7 @@ body {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	border: 2px solid #50bfb6;
+	border: 2px solid #44a099;
 	border-radius: 50%;
 	position: relative;
 }
@@ -598,7 +598,7 @@ body {
 	height: 25px;
 	width: 25px;
 	margin: 0 auto;
-	border: 2px solid #50bfb6;
+	border: 2px solid #44a099;
 	border-left: none;
 	border-top: none;
 	-webkit-transform: rotate(45deg);
@@ -613,7 +613,7 @@ body {
 	display: inline-block;
 	padding: .7rem 1.5rem;
 	margin: 0 1rem 2rem 0;
-	background: #50bfb6;
+	background: #44a099;
 	color: #fff;
 	font-size: 1.6rem;
 	text-decoration: none;
@@ -722,7 +722,7 @@ body {
 	bottom: 8px;
 	width: 100%;
 	height: 1px;
-	background: #a2d3cf;
+	background: #8ac0bc;
 }
 
 .menu__btn:active {
@@ -736,7 +736,7 @@ body {
 	bottom: 5px;
 	width: 100%;
 	height: 1px;
-	background: #50bfb6;
+	background: #44a099;
 }
 
 .menu__btn:active:before {
@@ -776,7 +776,7 @@ body {
 	vertical-align: bottom;
 	width: 100%;
 	height: .3rem;
-	background: #a2d3cf;
+	background: #8ac0bc;
 	border-radius: .2rem;
 	position: relative;
 	transition: background .3s .5s;
@@ -786,7 +786,7 @@ body {
 .menu__toggler > span:after {
 	width: 100%;
 	height: .3rem;
-	background: #a2d3cf;
+	background: #8ac0bc;
 	border-radius: .2rem;
 	position: absolute;
 	left: 0;
@@ -851,7 +851,7 @@ body {
 }
 
 .intro__text .bold {
-	color: #3ba199;
+	color: #357c77;
 	font-weight: 500;
 }
 
@@ -880,7 +880,7 @@ body {
 }
 
 .resume .header-h2 {
-	color: #a2d3cf;
+	color: #8ac0bc;
 }
 
 .resume .text {
@@ -986,7 +986,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	outline: 1px solid #50bfb6;
+	outline: 1px solid #44a099;
 	z-index: 1;
 	cursor: auto;
 	border: 0;
@@ -1092,7 +1092,7 @@ body {
 .contacts__form input[type="email"]:focus,
 .contacts__form select:focus,
 .contacts__form textarea:focus {
-	box-shadow: 0px 0px 0px 1px #50bfb6;
+	box-shadow: 0px 0px 0px 1px #44a099;
 	outline: 0px none currentColor;
 	transition: all 0.1s cubic-bezier(0.42, 0, 0.58, 1) 0;
 }
@@ -1179,14 +1179,14 @@ body {
 	display: none;
 	width: 100%;
 	height: 100%;
-	background: #50bfb6;
+	background: #44a099;
 	position: absolute;
 	top: 0;
 	left: 0;
 	text-align: center;
 	line-height: 50%;
 	speak: none;
-	border: 1px solid #50bfb6;
+	border: 1px solid #44a099;
 }
 
 .btn-social:active .btn-social__hover {
@@ -1196,7 +1196,7 @@ body {
 
 .btn-social svg {
 	display: none;
-	fill: #50bfb6;
+	fill: #44a099;
 }
 
 .thanks__wrapper {
@@ -1225,11 +1225,11 @@ body {
 
 .page-footer__design {
 	margin: 0 0 2rem;
-	color: #a2d3cf;
+	color: #8ac0bc;
 }
 
 .page-footer__copyright {
-	color: #a2d3cf;
+	color: #8ac0bc;
 	text-align: center;
 }
 
@@ -1493,12 +1493,12 @@ body {
 .btn-social {
 	padding: 2rem 4rem;
 	background: transparent;
-	color: #50bfb6;
+	color: #44a099;
 	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-	border: 1px solid #50bfb6;
+	border: 1px solid #44a099;
 	transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
 	display: inline-block;
 	height: auto;
@@ -1509,7 +1509,7 @@ body {
 
 .btn-social:hover {
 	color: #fff;
-	background: #50bfb6;
+	background: #44a099;
 }
 
 .btn-social:active {
