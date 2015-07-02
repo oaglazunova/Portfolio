@@ -21,10 +21,10 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'sonoko@mail.ru';//<== update the email address
+$email_from = $visitor_email;//<== update the email address
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+    "Here is the message:\n $message";
     
 $to = "sonoko@mail.ru";//<== update the email address
 $headers = "From: $email_from \r\n";
