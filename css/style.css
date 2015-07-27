@@ -995,6 +995,10 @@ body {
 	color: transparent;
 }
 
+.portfolio__img--gallery {
+	background: url("../img/work-gallery--medium.jpg") 50% 50% no-repeat;
+}
+
 .portfolio__img--suomi {
 	background: url("../img/work-suomi--medium.jpg") 50% 50% no-repeat;
 }
@@ -1013,6 +1017,10 @@ body {
 	margin: 0 auto 2rem;
 	pointer-events: none;
 	cursor: default;
+}
+
+.portfolio__img-wrapper--gallery {
+	background: url("../img/work-gallery--mobile.jpg") 50% 50% no-repeat;
 }
 
 .portfolio__img-wrapper--suomi {
@@ -1328,6 +1336,10 @@ body {
 	width: 450px;
 }
 
+.portfolio__img-wrapper--gallery {
+	background: url("../img/work-gallery--small.jpg") 50% 50% no-repeat;
+}
+
 .portfolio__img-wrapper--suomi {
 	background: url("../img/work-suomi--small.jpg") 50% 50% no-repeat;
 }
@@ -1549,6 +1561,10 @@ body {
 .portfolio__img {
 	height: 807px;
 	width: 1344px;
+}
+
+.portfolio__img--gallery {
+	background: url("../img/work-gallery--lg.jpg") 50% 50% no-repeat;
 }
 
 .portfolio__img--suomi {
