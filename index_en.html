@@ -55,8 +55,8 @@
         </li>
       </ul>
       </div>
-      <h1 class="page-header__h1">	  
-        Olga&ensp;Glazunova<br> 
+      <h1 class="page-header__h1">
+        Olga&ensp;Glazunova<br>
         <span>Front-end&ensp;developer</span>
        </h1>
       <a class="btn-round  btn-round--down" href="#intro">&#8595;</a>
@@ -69,7 +69,7 @@
 
     <div class="intro" id="intro">
       <div class="container">
-        <p class="intro__text">Hi! I'm a front-end developer from St.Petersburg, Russia. I have strong knowledge of <span class="bold">HTML5/CSS3</span>, ability to correctly apply <span class="bold">semantic tags</span> for proper page parsing and indexing by search engines. I have experience in developing and testing <span class="bold">cross-browser layouts</span> and in creating <span class="bold">responsive web pages</span> using <span class="bold">mobile-first approach</span>. I make websites as close to the templates as possible and always care about layout flexibility and the convinience of its further use. Strong <span class="bold">Adobe Photoshop</span> skills (the required level of knowledge for web development and psd templates creation/modification). My favourite front-end automation tools are <span class="bold">LESS</span> together with <span class="bold">Grunt</span>. I'm familiar with different front-end naming methodologies (personally I prefer <span class="bold">BEM with adjustments by Nicolas Gallagher</span>). Also I have basic knowledge of <span class="bold">SEO</span> and of user interface design (<span class="bold">UX/UI</span>).</p>
+        <p class="intro__text">Hi! I'm a front-end developer from St.Petersburg, Russia. I have strong knowledge of <span class="bold">HTML5/CSS3</span>, ability to correctly apply <span class="bold">semantic tags</span> for proper page parsing and indexing by search engines. I have experience in developing and testing <span class="bold">cross-browser layouts</span> and in creating <span class="bold">responsive web pages</span> using <span class="bold">mobile-first approach</span>. I make websites as close to the templates as possible and always care about layout flexibility and the convenience of its further use and development. Strong <span class="bold">Adobe Photoshop</span> skills (the required level of knowledge for web development and psd templates creation/modification). My favorite tools are <span class="bold">Jade</span> and<span class="bold">LESS</span> together with <span class="bold">Grunt</span>. I'm familiar with different front-end naming methodologies (personally I prefer <span class="bold">BEM with adjustments by Nicolas Gallagher</span>). I have also basic knowledge of <span class="bold">SEO</span> and of user interface design (<span class="bold">UX/UI</span>).</p>
       </div>
     </div>
 
@@ -77,24 +77,61 @@
 
     <section class="portfolio" id="portfolio">
       <div class="container">
-        
+
         <div class="portfolio__work">
           <div class="portfolio__img-wrapper  portfolio__img-wrapper--gallery" tabindex="1">
-            <div class="portfolio__img  portfolio__img--gallery" tabindex="1">Такси в Финляндию</div>
+            <div class="portfolio__img  portfolio__img--gallery" tabindex="1">Gallery containing sliders with images and video</div>
           </div>
           <div class="portfolio__description">
             <h2 class="header-h3">Gallery containing sliders with images and video</h2>
-            <p class="text">Responsive gallery which contains many sliders with pictures, text and video. The most difficult part here for me were scripts and Youtube API. And the most interesting was the implementation of "lazy loading" for images: I decided not to use any of the existing solutions for "lazy load", because A. I wanted to try and create such script by myself; B. I wasn't satisfied with the functionality of the existing "lazy load" plugins: all of them require to specify image path directly in HTML, but I needed to load images in CSS (as background) and didn't want to "litter" the code by unnecessary tags. Well, I really like the result!</p>
+            <p class="text">Responsive gallery which contains sliders with pictures, text and video. The most difficult part here for me were scripts and Youtube API. And the most interesting was the implementation of "lazy loading" for background images.</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">Masonry.js</span><span class="highlight">Lazy load</span><span class="highlight">Youtube API</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
             </div>
-            <a class="btn-small" href="projects/gallery/" target="_blank">Link to the website</a>
+            <a class="btn-small" href="http://olgaglazunova.ru/projects/gallery/" target="_blank">Link to the website</a>
             <br>
             <a class="btn-small" href="https://github.com/oaglazunova/Gallery_01" target="_blank">Project repository on Github</a>
           </div>
         </div>
 
         <div class="portfolio__work">
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--viinsy" tabindex="1">
+            <div class="portfolio__img  portfolio__img--viinsy" tabindex="1">Drag-and-Drop UI</div>
+          </div>
+          <div class="portfolio__description">
+            <h2 class="header-h3">Drag-and-Drop UI</h2>
+            <p class="text">
+              UI for editing devices' parameters. It was a challenging, but also a very interesting experience - to work with json data and to assign dynamically counters and propertis for UI elements.
+            </p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">JSON</span><span class="highlight">Ajax</span>
+            </div>
+            <a class="btn-small" href="http://olgaglazunova.ru/projects/viinsy/" target="_blank">Link to the website</a>
+            <br>
+            <a class="btn-small" href="https://github.com/oaglazunova/VIINSY-UI" target="_blank">Project repository on Github</a>
+          </div>
+        </div>
+
+         <div class="portfolio__work">
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--tt" tabindex="1">
+            <div class="portfolio__img  portfolio__img--tt" tabindex="1">Test task</div>
+          </div>
+          <div class="portfolio__description">
+            <h2 class="header-h3">Training project</h2>
+            <p class="text">
+              For practice.
+            </p>
+            <p class="text">Design: Interesnee<br>Development: Olga Glazunova</p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Jade</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
+            </div>
+            <a class="btn-small" href="http://olgaglazunova.ru/projects/interesnee-tt/" target="_blank">Link to the website</a>
+            <br>
+            <a class="btn-small" href="https://github.com/oaglazunova/tt" target="_blank">Project repository on Github</a>
+          </div>
+        </div>
+
+         <div class="portfolio__work">
           <div class="portfolio__img-wrapper  portfolio__img-wrapper--suomi" tabindex="1">
             <div class="portfolio__img  portfolio__img--suomi" tabindex="1">Taxi to Finland</div>
           </div>
@@ -105,7 +142,7 @@
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">PHP</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
             </div>
-            <a class="btn-small" href="projects/taxi-suomi/" target="_blank">Link to the website</a>
+            <a class="btn-small" href="http://olgaglazunova.ru/projects/taxi-suomi/" target="_blank">Link to the website</a>
             <br>
             <a class="btn-small" href="https://github.com/oaglazunova/Taxi-Suomi" target="_blank">Project repository on Github</a>
           </div>
@@ -117,12 +154,12 @@
           </div>
           <div class="portfolio__description">
             <h2 class="header-h3">PINK</h2>
-            <p class="text">This is my graduation project for the advanced course of front-end development at HTML Academy: mobile application website with responsive layout for mobile phones, tablets, laptops and desktop PCs. This course was mainly about responsive design and front-end automation tools, so all these skills I put into practice making the graduation project. While working on it the most interesting part for me was LESS: being a CSS pre-processor, it allows to turn CSS from a chaotic mess into a perfectly stuctured and neatly organized code. And mixins and variables greatly simplifies the work!</p>            
+            <p class="text">This is my graduation project for the advanced course of front-end development at HTML Academy: mobile application website with responsive layout for mobile phones, tablets, laptops and desktop PCs. This course was mainly about responsive design and front-end automation tools, and these skills I put into use making the graduation project.</p>
             <p class="text">Design: Anton Gluhanko<br>Development: Olga Glazunova</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Google Maps API</span><span class="highlight">Responsive layout</span>
             </div>
-            <a class="btn-small" href="projects/pink/" target="_blank">Link to the website</a>
+            <a class="btn-small" href="http://olgaglazunova.ru/projects/pink/" target="_blank">Link to the website</a>
             <br>
             <a class="btn-small" href="https://github.com/oaglazunova/31210-Pink" target="_blank">Project repository on Github</a>
           </div>
@@ -134,12 +171,12 @@
           </div>
           <div class="portfolio__description">
             <h2 class="header-h3">Technomart</h2>
-            <p class="text">My graduation project for the front-end development course at HTML Academy: online shop selling construction tools and materials. I selected the most challenging one of the available psd templates: it contained varied elements interesting in terms of design and implementation, which made work on this project very interesting and fulfilling for me.</p>            
+            <p class="text">My graduation project for the front-end development course at HTML Academy: online shop selling construction tools and materials. I selected the most challenging one of the available psd templates: it contained varied elements interesting in terms of design and implementation, which made work on this project very interesting and fulfilling for me.</p>
             <p class="text">Design: Anton Gluhanko<br>Development: Olga Glazunova</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span>
             </div>
-            <a class="btn-small" href="projects/technomart/" target="_blank">Link to the website</a>
+            <a class="btn-small" href="http://olgaglazunova.ru/projects/technomart/" target="_blank">Link to the website</a>
             <br>
             <a class="btn-small" href="https://github.com/oaglazunova/Technomart" target="_blank">Project repository on Github</a>
           </div>
@@ -207,7 +244,7 @@
               <h3 class="header-h3">&#8226; UI developer</h3>
               <a class="personal__company-logo" href="http://www.gilbarco.com" target="_blank"><img src="img/logo-gilbarco.png" width="200" height="48" title="Gilbarco Veeder-Root" alt="Gilbarco Veeder-Root" />
               </a>
-              <p class="text">September 2014 — present time</p>
+              <p class="text">September 2014 — August 2015</p>
               <p class="text"><b>Project:</b> integrated fuel management solutions for gas stations (Neste Oil, British Petroleum, Rosneft, Lukoil, Auchan)</p>
               <p class="text"><b>Environment:</b> HTML, CSS, JavaScript, Adobe Photoshop, agile software development methodology (SCRUM)</p>
               <p class="text"><b>Responsibility:</b> modification and development of user interfaces for OPTs (outdoor payment terminals); UI localization.</p>
@@ -278,7 +315,7 @@
               <span class="header-h3">Message:</span>
             </label>
             <textarea id="message" name="message" placeholder="Describe your project" rows="10" tabindex="3"></textarea>
-            <input class="btn" type="submit" name="submit" value="Send message">            
+            <input class="btn" type="submit" name="submit" value="Send message">
           </form>
         </div>
 
@@ -286,8 +323,8 @@
     </section>
 
   </div>
-  
-  
+
+
 
   <footer class="page-footer">
     <div class="container">
@@ -295,8 +332,8 @@
       <p class="page-footer__copyright">&#169; 2015 Olga Glazunova</p>
     </div>
   </footer>
-  
-  
+
+
 
   <script src="js/script.js"></script>
   <script>

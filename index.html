@@ -55,8 +55,8 @@
         </li>
       </ul>
       </div>
-      <h1 class="page-header__h1">	  
-        Ольга&ensp;Глазунова<br> 
+      <h1 class="page-header__h1">
+        Ольга&ensp;Глазунова<br>
         <span>Создание&ensp;веб-интерфейсов</span>
        </h1>
       <a class="btn-round  btn-round--down" href="#intro">&#8595;</a>
@@ -69,7 +69,7 @@
 
     <div class="intro" id="intro">
       <div class="container">
-        <p class="intro__text">Привет! Я верстальщик и веб-разработчик из Санкт-Петербурга. Отлично знаю <span class="bold">HTML5/CSS3</span>, могу грамотно применять <span class="bold">семантические тэги</span> для правильного анализа и индексирования страницы поисковиками. Люблю писать красивый код - красивый как с точки зрения логической структуры, так и оформления. Всегда забочусь о гибкости вёрстки и удобстве её дальнейшего использования. Верстаю в максимальном соответствии с макетом. Умею делать и тестировать <span class="bold">кросс-браузерную вёрстку</span>. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Хорошо владею Adobe Photoshop. В работе использую <span class="bold">LESS</span> (в связке с Grunt). Знакома с различными методологиями вёрстки (предпочитаю <span class="bold">БЭМ в модификации Галлахера</span>). Владею <span class="bold">JavaScript</span>. Обладаю базовыми знаниями в области <span class="bold">SEO</span>, в области проектирования интерфейсов (<span class="bold">UX/UI</span>).</p>
+        <p class="intro__text">Привет! Я веб-разработчик из Санкт-Петербурга. Отлично знаю <span class="bold">HTML5/CSS3</span>, могу грамотно применять <span class="bold">семантические тэги</span> для правильного анализа и индексирования страницы поисковиками. Люблю писать красивый код - красивый как с точки зрения логической структуры, так и оформления. Всегда забочусь о гибкости вёрстки и удобстве её дальнейшего использования. Верстаю в максимальном соответствии с макетом. Умею делать и тестировать <span class="bold">кросс-браузерную вёрстку</span>. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Хорошо владею Adobe Photoshop. В работе использую <span class="bold">LESS</span> (в связке с Grunt) и <span class="bold">Jade</span>. Знакома с различными методологиями вёрстки (предпочитаю <span class="bold">БЭМ в модификации Галлахера</span>). Владею <span class="bold">JavaScript</span> и <span class="bold">jQuery</span>. Обладаю базовыми знаниями в области <span class="bold">SEO</span>, в области проектирования интерфейсов (<span class="bold">UX/UI</span>).</p>
       </div>
     </div>
 
@@ -77,20 +77,58 @@
 
     <section class="portfolio" id="portfolio">
       <div class="container">
-        
+
+
         <div class="portfolio__work">
           <div class="portfolio__img-wrapper  portfolio__img-wrapper--gallery" tabindex="1">
-            <div class="portfolio__img  portfolio__img--gallery" tabindex="1">Такси в Финляндию</div>
+            <div class="portfolio__img  portfolio__img--gallery" tabindex="1">Галерея слайдеров с изображениями и видео</div>
           </div>
           <div class="portfolio__description">
             <h2 class="header-h3">Галерея слайдеров с изображениями и видео</h2>
-            <p class="text">Респонсиваня галерея, состоящая из множества слайдеров с картинками, текстом и видео. Больше всего трудностей при работе над этим проектом вызвали скрипты и работа с Youtube API. А самым интересным оказалась реализация подгрузки изображений по принципу lazy load: я не воспользовалась одним из множества готовых решений для этой цели, поскольку мне, во-первых, хотелось попробовать написать подобный скрипт самой; во-вторых, меня не устраивала функциональность имеющихся плагинов для lazy load: все они требуют прописывать путь для изображений прямо в HTML, мне же нужно было подгружать изображения через CSS (как фоны) и не хотелось "засорять" код. По-моему, получилось неплохо!</p>
+            <p class="text">Респонсиваня галерея, состоящая из множества слайдеров с картинками, текстом и видео. Больше всего трудностей при работе над этим проектом вызвали скрипты и работа с Youtube API. А самым интересным оказалась реализация подгрузки фоновых изображений по принципу lazy load.</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">Masonry.js</span><span class="highlight">Lazy load</span><span class="highlight">Youtube API</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
             </div>
             <a class="btn-small" href="projects/gallery/" target="_blank">Ссылка на веб-сайт</a>
             <br>
             <a class="btn-small" href="https://github.com/oaglazunova/Gallery_01" target="_blank">Репозиторий проекта на Github</a>
+          </div>
+        </div>
+
+        <div class="portfolio__work">
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--viinsy" tabindex="1">
+            <div class="portfolio__img  portfolio__img--viinsy" tabindex="1">Drag-and-Drop UI</div>
+          </div>
+          <div class="portfolio__description">
+            <h2 class="header-h3">Drag-and-Drop UI</h2>
+            <p class="text">
+              Интерфейс приложения для редактирования параметров медиа-устройств. Работать с данными из json-файла, динамически выставлять счётчики и определять свойства активного устройства было сложно, но интересно.
+            </p>
+            <p class="text">Дизайн: VIINSY<br>Разработка: Ольга Глазунова</p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">JSON</span><span class="highlight">Ajax</span>
+            </div>
+            <a class="btn-small" href="projects/viinsy/" target="_blank">Ссылка на веб-сайт</a>
+            <br>
+            <a class="btn-small" href="https://github.com/oaglazunova/VIINSY-UI" target="_blank">Репозиторий проекта на Github</a>
+          </div>
+        </div>
+
+        <div class="portfolio__work">
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--tt" tabindex="1">
+            <div class="portfolio__img  portfolio__img--tt" tabindex="1">Тестовое задание</div>
+          </div>
+          <div class="portfolio__description">
+            <h2 class="header-h3">Тренировочный проект</h2>
+            <p class="text">
+            Для практики.
+            </p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Jade</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
+            </div>
+            <a class="btn-small" href="projects/tt/" target="_blank">Ссылка на веб-сайт</a>
+            <br>
+            <a class="btn-small" href="https://github.com/oaglazunova/Interesnee-TT" target="_blank">Репозиторий проекта на Github</a>
           </div>
         </div>
 
@@ -117,7 +155,7 @@
           </div>
           <div class="portfolio__description">
             <h2 class="header-h3">PINK</h2>
-            <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов. На курсах нам преподавали особенности адаптивного дизайна, а также автоматизацию в вёрстке, и все эти знания мы применяли на практике, работая над выпускными проектами. Самой захватывающей вещью для меня оказался Less: он превращает CSS из мешанины свойств в прекрасно структурированный и чёткий код. А возможность использовать mixin'ы и переменные очень облегчает работу.</p>
+            <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов. На курсах нам преподавали особенности адаптивного дизайна, а также автоматизацию в вёрстке, и все эти знания мы применяли на практике, работая над выпускными проектами.</p>
             <p class="text">Дизайн: Антон Глуханько<br>Разработка: Ольга Глазунова</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Google Maps API</span><span class="highlight">Responsive layout</span>
@@ -207,7 +245,7 @@
               <h3 class="header-h3">&#8226; Инженер-разработчик интерфейсов</h3>
               <a class="personal__company-logo" href="http://www.gilbarco.com" target="_blank"><img src="img/logo-gilbarco.png" width="200" height="48" title="Gilbarco Veeder-Root" alt="Gilbarco Veeder-Root" />
               </a>
-              <p class="text">Сентябрь 2014 — по настоящее время</p>
+              <p class="text">Сентябрь 2014 — Август 2015</p>
               <p class="text"><b>Проект:</b> интегрированные решения для автоматических заправочных станций (Neste Oil, British Petroleum, Роснефть, Лукойл, Ашан)</p>
               <p class="text"><b>Среда:</b> HTML, CSS, JavaScript, Adobe Photoshop, agile-методология разработки (SCRUM)</p>
               <p class="text"><b>Обязанности:</b> создание и модификация пользовательских интерфейсов для платёжных терминалов на автоматических АЗС; локализация интерфейсов.</p>
@@ -278,7 +316,7 @@
               <span class="header-h3">Текст сообщения:</span>
             </label>
             <textarea id="message" name="message" placeholder="Опишите ваш проект" rows="10" tabindex="3"></textarea>
-            <input class="btn" type="submit" name="submit" value="Отправить сообщение">            
+            <input class="btn" type="submit" name="submit" value="Отправить сообщение">
           </form>
         </div>
 

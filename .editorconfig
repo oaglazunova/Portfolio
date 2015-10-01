@@ -1,17 +1,23 @@
-; http://editorconfig.org
-
-root = true
+# Файл с настройками для редактора.
+#
+# Если вы разрабатываете в редакторе от JetBrains, BBEdit, Coda или SourceLair
+# этот файл уже поддерживается и не нужно производить никаких дополнительных действий.
+#
+# Если вы ведете разработку в другом редакторе, зайдите на http://editorconfig.org/
+# и в разделе "Download a Plugin" скачайте дополнение для вашего редактора.
 
 [*]
+root = true
+
+# Кодировка файлов utf-8
 charset = utf-8
-indent_style = space
-indent_size = 2
-end_of_line = lf
-trim_trailing_whitespace = true
+
+# Обязательное добавление пустой строки в конец каждого файла
 insert_final_newline = true
 
-[*.{py,php,go}]
-indent_size = 4
+# Отступы делаются с помощью двух пробелов
+indent_style = space
+indent_size = 2
 
-[*.md]
-trim_trailing_whitespace = false
+# Удаление пустых пробелов в конце строки
+trim_trailing_whitespace = true
