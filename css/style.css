@@ -511,18 +511,18 @@ body {
 	display: inline-block;
 	padding: 2rem 4rem;
 	background: transparent;
-	color: #44a099;
+	color: #238e86;
 	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-	border: 1px solid #44a099;
+	border: 1px solid #238e86;
 	transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
 }
 
 .btn:hover {
 	color: #fff;
-	background: #44a099;
+	background: #238e86;
 }
 
 .btn:active {
@@ -555,7 +555,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 1px;
-	background: #44a099;
+	background: #238e86;
 }
 
 .btn-small:hover:before {
@@ -565,7 +565,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 3px;
-	background: #357c77;
+	background: #1e7973;
 }
 
 .btn-small:active:before {
@@ -587,7 +587,7 @@ body {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	border: 2px solid #44a099;
+	border: 2px solid #238e86;
 	border-radius: 50%;
 	position: relative;
 }
@@ -598,7 +598,7 @@ body {
 	height: 25px;
 	width: 25px;
 	margin: 0 auto;
-	border: 2px solid #44a099;
+	border: 2px solid #238e86;
 	border-left: none;
 	border-top: none;
 	-webkit-transform: rotate(45deg);
@@ -613,7 +613,7 @@ body {
 	display: inline-block;
 	padding: .7rem 1.5rem;
 	margin: 0 1rem 2rem 0;
-	background: #44a099;
+	background: #238e86;
 	color: #fff;
 	font-size: 1.6rem;
 	text-decoration: none;
@@ -646,7 +646,7 @@ body {
 
 .page-header {
 	height: 100vh;
-	background: #000000 url("../img/bkg--small.jpg") no-repeat center center;
+	background: #000 url("../img/bkg--small.jpg") no-repeat center center;
 	background-size: cover;
 	position: relative;
 }
@@ -722,7 +722,7 @@ body {
 	bottom: 8px;
 	width: 100%;
 	height: 1px;
-	background: #8ac0bc;
+	background: #51c6bd;
 }
 
 .menu__btn:active {
@@ -736,7 +736,7 @@ body {
 	bottom: 5px;
 	width: 100%;
 	height: 1px;
-	background: #44a099;
+	background: #238e86;
 }
 
 .menu__btn:active:before {
@@ -776,7 +776,7 @@ body {
 	vertical-align: bottom;
 	width: 100%;
 	height: .3rem;
-	background: #8ac0bc;
+	background: #51c6bd;
 	border-radius: .2rem;
 	position: relative;
 	transition: background .3s .5s;
@@ -786,7 +786,7 @@ body {
 .menu__toggler > span:after {
 	width: 100%;
 	height: .3rem;
-	background: #8ac0bc;
+	background: #51c6bd;
 	border-radius: .2rem;
 	position: absolute;
 	left: 0;
@@ -828,18 +828,18 @@ body {
 }
 
 .about {
-	background: #000000 url("../img/bkg.jpg") 50% 50% / cover no-repeat fixed;
+	background: #000 url("../img/bkg.jpg") 50% 50% / cover no-repeat fixed;
 }
 
 .about__text {
 	margin: 2em auto;
-	color: #f2f2f2;
+	color: #e1e1e1;
 	line-height: 2em;
 	text-align: justify;
 }
 
 .intro {
-	background: #f2f2f2;
+	background: #e1e1e1;
 	padding: 6rem 0;
 }
 
@@ -851,14 +851,14 @@ body {
 }
 
 .intro__text .bold {
-	color: #357c77;
+	color: #1e7973;
 	font-weight: 500;
 }
 
 .resume {
 	padding: 5rem 0;
 	margin: 0 auto;
-	background: #000000 url("../img/bkg--small.jpg") no-repeat center center;
+	background: #000 url("../img/bkg--small.jpg") no-repeat center center;
 	background-size: 700px 467px;
 	text-align: center;
 	position: relative;
@@ -871,7 +871,7 @@ body {
 	content: "";
 	border-style: solid;
 	border-width: 40px 100px 0 100px;
-	border-color: #f2f2f2 transparent transparent transparent;
+	border-color: #e1e1e1 transparent transparent transparent;
 	position: absolute;
 	bottom: -30px;
 	left: 50%;
@@ -880,12 +880,12 @@ body {
 }
 
 .resume .header-h2 {
-	color: #8ac0bc;
+	color: #51c6bd;
 }
 
 .resume .text {
 	margin: 0 0 3rem;
-	color: #f2f2f2;
+	color: #e1e1e1;
 	text-align: center;
 }
 
@@ -969,7 +969,7 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 1px;
-	background: rgba(0, 0, 0, 0.12);
+	background: rgba(0, 0, 0, 0.2);
 	bottom: -2rem;
 	left: 0;
 }
@@ -986,7 +986,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	outline: 1px solid #44a099;
+	outline: 1px solid #238e86;
 	z-index: 1;
 	cursor: auto;
 	border: 0;
@@ -997,6 +997,10 @@ body {
 
 .portfolio__img--tt {
 	background: url("../img/work-tt--medium.jpg") 50% 50% no-repeat;
+}
+
+.portfolio__img--db {
+	background: url("../img/work-db--medium.jpg") 50% 50% no-repeat;
 }
 
 .portfolio__img--viinsy {
@@ -1029,6 +1033,10 @@ body {
 
 .portfolio__img-wrapper--tt {
 	background: url("../img/work-tt--mobile.jpg") 50% 50% no-repeat;
+}
+
+.portfolio__img-wrapper--db {
+	background: url("../img/work-db--mobile.jpg") 50% 50% no-repeat;
 }
 
 .portfolio__img-wrapper--viinsy {
@@ -1076,7 +1084,7 @@ body {
 
 .contacts {
 	padding: 8rem 0 10rem;
-	background: #f2f2f2;
+	background: #e1e1e1;
 }
 
 .contacts .header-h2 {
@@ -1116,7 +1124,7 @@ body {
 .contacts__form input[type="email"]:focus,
 .contacts__form select:focus,
 .contacts__form textarea:focus {
-	box-shadow: 0px 0px 0px 1px #44a099;
+	box-shadow: 0px 0px 0px 1px #238e86;
 	outline: 0px none currentColor;
 	transition: all 0.1s cubic-bezier(0.42, 0, 0.58, 1) 0;
 }
@@ -1203,14 +1211,14 @@ body {
 	display: none;
 	width: 100%;
 	height: 100%;
-	background: #44a099;
+	background: #238e86;
 	position: absolute;
 	top: 0;
 	left: 0;
 	text-align: center;
 	line-height: 50%;
 	speak: none;
-	border: 1px solid #44a099;
+	border: 1px solid #238e86;
 }
 
 .btn-social:active .btn-social__hover {
@@ -1220,7 +1228,7 @@ body {
 
 .btn-social svg {
 	display: none;
-	fill: #44a099;
+	fill: #238e86;
 }
 
 .thanks__wrapper {
@@ -1241,19 +1249,14 @@ body {
 }
 
 .page-footer {
-	padding: 4rem 0 2rem;
+	padding: 2rem 0 2rem;
 	background: #757575;
 	color: #fff;
 	text-align: justify;
 }
 
-.page-footer__design {
-	margin: 0 0 2rem;
-	color: #8ac0bc;
-}
-
 .page-footer__copyright {
-	color: #8ac0bc;
+	color: #51c6bd;
 	text-align: center;
 }
 
@@ -1273,7 +1276,7 @@ body {
 
 .page-header {
 	height: 600px;
-	background: #000000 url("../img/bkg--medium.jpg") no-repeat center center;
+	background: #000 url("../img/bkg--medium.jpg") no-repeat center center;
 	background-size: 1024px 600px;
 }
 
@@ -1327,7 +1330,7 @@ body {
 }
 
 .resume {
-	background: #f2f2f2;
+	background: #e1e1e1;
 }
 
 .resume:after {
@@ -1354,6 +1357,10 @@ body {
 
 .portfolio__img-wrapper--tt {
 	background: url("../img/work-tt--small.jpg") 50% 50% no-repeat;
+}
+
+.portfolio__img-wrapper--db {
+	background: url("../img/work-db--small.jpg") 50% 50% no-repeat;
 }
 
 .portfolio__img-wrapper--viinsy {
@@ -1409,7 +1416,7 @@ body {
 @media (min-width: 1000px) {
 
 .page-header {
-	background: #000000 url("../img/bkg--lg.jpg") no-repeat center center;
+	background: #000 url("../img/bkg--lg.jpg") no-repeat center center;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -1463,11 +1470,11 @@ body {
 }
 
 .intro {
-	padding: 6rem 0 8rem;
+	padding: 10rem 0 10rem;
 }
 
 .resume {
-	padding: 7rem 0 7rem;
+	padding: 10rem 0 10rem;
 }
 
 .resume:after {
@@ -1478,7 +1485,7 @@ body {
 }
 
 .personal {
-	padding: 15rem 0 15rem;
+	padding: 10rem 0 10rem;
 }
 
 .personal__uni {
@@ -1494,7 +1501,7 @@ body {
 }
 
 .portfolio {
-	padding: 15rem 0 15rem;
+	padding: 10rem 0 10rem;
 }
 
 .portfolio__work {
@@ -1515,7 +1522,7 @@ body {
 }
 
 .contacts {
-	padding: 13rem 0 15rem;
+	padding: 10rem 0 10rem;
 }
 
 .contacts .header-h2 {
@@ -1529,12 +1536,12 @@ body {
 .btn-social {
 	padding: 2rem 4rem;
 	background: transparent;
-	color: #44a099;
+	color: #238e86;
 	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-	border: 1px solid #44a099;
+	border: 1px solid #238e86;
 	transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
 	display: inline-block;
 	height: auto;
@@ -1545,7 +1552,7 @@ body {
 
 .btn-social:hover {
 	color: #fff;
-	background: #44a099;
+	background: #238e86;
 }
 
 .btn-social:active {
@@ -1572,7 +1579,7 @@ body {
 
 .page-header {
 	height: 720px;
-	background: #000000 url("../img/bkg--lg.jpg") 50% 50% no-repeat fixed;
+	background: #000 url("../img/bkg--lg.jpg") 50% 50% no-repeat fixed;
 }
 
 .page-header__h1 {
@@ -1582,6 +1589,14 @@ body {
 	animation-name: main-header;
 }
 
+.personal {
+	padding: 15rem 0 15rem;
+}
+
+.portfolio {
+	padding: 15rem 0 15rem;
+}
+
 .portfolio__img {
 	height: 807px;
 	width: 1344px;
@@ -1589,6 +1604,10 @@ body {
 
 .portfolio__img--tt {
 	background: url("../img/work-tt--lg.jpg") 50% 50% no-repeat;
+}
+
+.portfolio__img--db {
+	background: url("../img/work-db--lg.jpg") 50% 50% no-repeat;
 }
 
 .portfolio__img--viinsy {
@@ -1609,6 +1628,10 @@ body {
 
 .portfolio__img--tm {
 	background: url("../img/work-tm--lg.jpg") 50% 50% no-repeat;
+}
+
+.contacts {
+	padding: 15rem 0 15rem;
 }
 
 }

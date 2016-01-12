@@ -69,7 +69,7 @@
 
     <div class="intro" id="intro">
       <div class="container">
-        <p class="intro__text">Привет! Я веб-разработчик из Санкт-Петербурга. Отлично знаю <span class="bold">HTML5/CSS3</span>, могу грамотно применять <span class="bold">семантические тэги</span> для правильного анализа и индексирования страницы поисковиками. Люблю писать красивый код - красивый как с точки зрения логической структуры, так и оформления. Всегда забочусь о гибкости вёрстки и удобстве её дальнейшего использования. Верстаю в максимальном соответствии с макетом. Умею делать и тестировать <span class="bold">кросс-браузерную вёрстку</span>. Есть опыт создания адаптивной вёрстки с адаптивной сеткой и графикой. Хорошо владею Adobe Photoshop. В работе использую <span class="bold">LESS</span> (в связке с Grunt) и <span class="bold">Jade</span>. Знакома с различными методологиями вёрстки (предпочитаю <span class="bold">БЭМ в модификации Галлахера</span>). Владею <span class="bold">JavaScript</span> и <span class="bold">jQuery</span>. Обладаю базовыми знаниями в области <span class="bold">SEO</span>, в области проектирования интерфейсов (<span class="bold">UX/UI</span>).</p>
+        <p class="intro__text">Привет! Я веб-разработчик из Санкт-Петербурга. Отлично знаю <span class="bold">HTML5/CSS3</span>, <span class="bold">JavaScript</span> и <span class="bold">jQuery</span>. Люблю писать красивый код - красивый как с точки зрения логической структуры, так и оформления. Всегда забочусь о гибкости вёрстки и удобстве её дальнейшего использования. Верстаю в максимальном соответствии с макетом. Умею делать и тестировать <span class="bold">кросс-браузерную</span>, <span class="bold">респонсивную</span> вёрстку. Мои любимые инструменты - препроцессор <span class="bold">LESS</span> (в связке со сборщиком с Grunt) и шаблонизатор <span class="bold">Jade</span>. Есть опыт работы с <span class="bold">Bootstrap</span>, c <span class="bold">SCSS</span>. Хорошо владею Adobe Photoshop. Знакома с различными методологиями вёрстки (предпочитаю <span class="bold">БЭМ в модификации Галлахера</span>). Обладаю базовыми знаниями в области <span class="bold">SEO</span>, в области проектирования интерфейсов (<span class="bold">UX/UI</span>).</p>
       </div>
     </div>
 
@@ -80,18 +80,31 @@
 
 
         <div class="portfolio__work">
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--db" tabindex="1">
+            <div class="portfolio__img  portfolio__img--db" tabindex="1">Geisha and Maiko Database Project</div>
+          </div>
+          <div class="portfolio__description">
+            <h2 class="header-h3">Geisha and Maiko Database Project</h2>
+            <p class="text">Сайт, содержащий сведения о гейко и майко Киото и других японских городов, а также об окия (домах гейш).<br>Мне было очень увлекательно работать с AngularJS, продумывать структуру данных. При этом я столкнулась с новыми для себя задачами, например, с настройкой поддержки HTML5 mode на стороне сервера.</p>
+            <p class="text">Дизайн и разработка: Ольга Глазунова</p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">AngularJS</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">Json</span><span class="highlight">Ajax</span><span class="highlight">PHP</span><span class="highlight">Apache</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Bootstrap</span><span class="highlight">Responsive layout</span>
+            </div>
+            <a class="btn-small" href="http://geisha-list.com/" target="_blank">Ссылка на веб-сайт</a>
+          </div>
+        </div>
+         
+         <div class="portfolio__work">
           <div class="portfolio__img-wrapper  portfolio__img-wrapper--gallery" tabindex="1">
             <div class="portfolio__img  portfolio__img--gallery" tabindex="1">Галерея слайдеров с изображениями и видео</div>
           </div>
           <div class="portfolio__description">
-            <h2 class="header-h3">Галерея слайдеров с изображениями и видео</h2>
-            <p class="text">Респонсиваня галерея, состоящая из множества слайдеров с картинками, текстом и видео. Больше всего трудностей при работе над этим проектом вызвали скрипты и работа с Youtube API. А самым интересным оказалась реализация подгрузки фоновых изображений по принципу lazy load.</p>
+            <h2 class="header-h3">kinonovinki.net</h2>
+            <p class="text">Респонсивная галерея, состоящая из множества слайдеров с картинками, текстом и видео. Cетка сделана с помощью плагина Masonry.js, остальные скрипты написаны мной (слайдеры, интеграция с Youtube, задержка подгрузки изображений и т.д.).</p>
             <div class="portfolio__technologies">
-              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">Masonry.js</span><span class="highlight">Lazy load</span><span class="highlight">Youtube API</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">Masonry.js</span><span class="highlight">Youtube API</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
             </div>
-            <a class="btn-small" href="projects/gallery/" target="_blank">Ссылка на веб-сайт</a>
-            <br>
-            <a class="btn-small" href="https://github.com/oaglazunova/Gallery_01" target="_blank">Репозиторий проекта на Github</a>
+            <a class="btn-small" href="http://kinonovinki.net/" target="_blank">Ссылка на веб-сайт</a>
           </div>
         </div>
 
@@ -102,33 +115,15 @@
           <div class="portfolio__description">
             <h2 class="header-h3">Drag-and-Drop UI</h2>
             <p class="text">
-              Интерфейс приложения для редактирования параметров медиа-устройств. Работать с данными из json-файла, динамически выставлять счётчики и определять свойства активного устройства было сложно, но интересно.
+              Hаписанный на JS и jQuery элемент интерфейса c Drag&amp;Drop, позволяющий отображать, изменять и сохранять информацию об устройствах, взятых из json-файла.
             </p>
-            <p class="text">Дизайн: VIINSY<br>Разработка: Ольга Глазунова</p>
+            <p class="text">Разработка: Ольга Глазунова</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">JSON</span><span class="highlight">Ajax</span>
             </div>
             <a class="btn-small" href="projects/VIINSY-UI/" target="_blank">Ссылка на веб-сайт</a>
             <br>
             <a class="btn-small" href="https://github.com/oaglazunova/VIINSY-UI" target="_blank">Репозиторий проекта на Github</a>
-          </div>
-        </div>
-
-        <div class="portfolio__work">
-          <div class="portfolio__img-wrapper  portfolio__img-wrapper--tt" tabindex="1">
-            <div class="portfolio__img  portfolio__img--tt" tabindex="1">Тестовое задание</div>
-          </div>
-          <div class="portfolio__description">
-            <h2 class="header-h3">Тренировочный проект</h2>
-            <p class="text">
-            Для практики.
-            </p>
-            <div class="portfolio__technologies">
-              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Jade</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
-            </div>
-            <a class="btn-small" href="projects/tt/" target="_blank">Ссылка на веб-сайт</a>
-            <br>
-            <a class="btn-small" href="https://github.com/oaglazunova/Interesnee-TT" target="_blank">Репозиторий проекта на Github</a>
           </div>
         </div>
 
@@ -141,11 +136,27 @@
             <p class="text">Лэндинг для компании, занимающейся организацией поездок в Финляндию, с возможностью заказа машины через сайт. Я делала и дизайн, и вёрстку. Целью было сделать страницу максимально лаконичной, но в то же время запоминающейся и функциональной.</p>
             <p class="text">Дизайн и разработка: Ольга Глазунова</p>
             <div class="portfolio__technologies">
-              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">PHP</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Yandex.Maps API</span><span class="highlight">PHP</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
             </div>
-            <a class="btn-small" href="projects/taxi-suomi/" target="_blank">Ссылка на веб-сайт</a>
+            <a class="btn-small" href="http://www.advance.spb.ru/" target="_blank">Ссылка на веб-сайт</a>
+          </div>
+        </div>
+
+        <div class="portfolio__work">
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--tt" tabindex="1">
+            <div class="portfolio__img  portfolio__img--tt" tabindex="1">Тестовое задание</div>
+          </div>
+          <div class="portfolio__description">
+            <h2 class="header-h3">Test</h2>
+            <p class="text">
+            Практика.
+            </p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Jade</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
+            </div>
+            <a class="btn-small" href="projects/tt/" target="_blank">Ссылка на веб-сайт</a>
             <br>
-            <a class="btn-small" href="https://github.com/oaglazunova/Taxi-Suomi" target="_blank">Репозиторий проекта на Github</a>
+            <a class="btn-small" href="https://github.com/oaglazunova/Interesnee-TT" target="_blank">Репозиторий проекта на Github</a>
           </div>
         </div>
 
@@ -155,7 +166,7 @@
           </div>
           <div class="portfolio__description">
             <h2 class="header-h3">PINK</h2>
-            <p class="text">Выпускной проект на продвинутых курсах HTML Academy: адаптивная вёрстка сайта мобильного приложения для мобильных устройств, планшетов и десктопов. На курсах нам преподавали особенности адаптивного дизайна, а также автоматизацию в вёрстке, и все эти знания мы применяли на практике, работая над выпускными проектами.</p>
+            <p class="text">Выпускной проект на 'продвинутом' интенсиве HTML Academy: адаптивная вёрстка сайта для мобильных устройств, планшетов и десктопов. На курсах нам преподавали особенности адаптивного дизайна, а также автоматизацию в вёрстке, и все эти знания мы применяли на практике, работая над выпускными проектами.</p>
             <p class="text">Дизайн: Антон Глуханько<br>Разработка: Ольга Глазунова</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Google Maps API</span><span class="highlight">Responsive layout</span>
@@ -253,7 +264,7 @@
 
             <div class="personal__text-block">
               <h3 class="header-h3">Прочий опыт работы:</h3>
-              <a class="btn" href="#" target="_blank">Скачать резюме</a>
+              <a class="btn" href="CV_GlazunovaOA_ru.pdf" target="_blank">Скачать резюме</a>
             </div>
           </div>
 
@@ -326,9 +337,8 @@
   </div>
 
   <footer class="page-footer">
-    <div class="container">
-      <p class="page-footer__design">Этот адаптивный сайт спроектирован, разработан и поддерживается мной. Он создан при помощи HTML5, CSS3 и JavaScript, оптимизирован для быстрой загрузки. Текущая средняя скорость - 1.4 сек. Галимжан Абдугалимов, спасибо за фото!</p>
-      <p class="page-footer__copyright">&#169; 2015 Ольга Глазунова</p>
+    <div class="container">      
+      <p class="page-footer__copyright">&#169; 2016 Ольга Глазунова</p>
     </div>
   </footer>
 
