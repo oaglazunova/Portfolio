@@ -41,19 +41,19 @@
 
   <header class="page-header">
     <div class="container">
-     <div class="menu-wrapper">
-      <a id="toggler" class="menu__toggler" href="#"><span></span></a>
-      <ul id="menu" class="menu">
-        <li>
-          <a class="menu__btn" href="#portfolio">Projects</a>
-        </li>
-        <li>
-          <a class="menu__btn" href="#resume">Résumé</a>
-        </li>
-        <li>
-          <a class="menu__btn" href="#contacts">Contacts</a>
-        </li>
-      </ul>
+      <div class="menu-wrapper">
+        <a id="toggler" class="menu__toggler" href="#"><span></span></a>
+        <ul id="menu" class="menu">
+          <li>
+            <a class="menu__btn" href="#portfolio">Projects</a>
+          </li>
+          <li>
+            <a class="menu__btn" href="#resume">Résumé</a>
+          </li>
+          <li>
+            <a class="menu__btn" href="#contacts">Contacts</a>
+          </li>
+        </ul>
       </div>
       <h1 class="page-header__h1">
         Olga&ensp;Glazunova<br>
@@ -69,7 +69,7 @@
 
     <div class="intro" id="intro">
       <div class="container">
-        <p class="intro__text">Hi! I'm a front-end developer from St.Petersburg, Russia. I have strong knowledge of <span class="bold">HTML5/CSS3</span>, ability to correctly apply <span class="bold">semantic tags</span> for proper page parsing and indexing by search engines. I have experience in developing and testing <span class="bold">cross-browser layouts</span> and in creating <span class="bold">responsive web pages</span> using <span class="bold">mobile-first approach</span>. I make websites as close to the templates as possible and always care about layout flexibility and the convenience of its further use and development. Strong <span class="bold">Adobe Photoshop</span> skills (the required level of knowledge for web development and psd templates creation/modification). My favorite tools are <span class="bold">Jade</span> and<span class="bold">LESS</span> together with <span class="bold">Grunt</span>. I'm familiar with different front-end naming methodologies (personally I prefer <span class="bold">BEM with adjustments by Nicolas Gallagher</span>). I have also basic knowledge of <span class="bold">SEO</span> and of user interface design (<span class="bold">UX/UI</span>).</p>
+        <p class="intro__text">Hi! I'm a front-end developer from St.Petersburg, Russia. I have strong knowledge of <span class="bold">HTML5/CSS3</span>, <span class="bold">JavaScript</span> and <span class="bold">jQuery</span>. I have experience in developing and testing <span class="bold">cross-browser layouts</span> and in creating <span class="bold">responsive web pages</span> using <span class="bold">mobile-first approach</span>. I make websites as close to the templates as possible and always care about layout flexibility and the convenience of its further use and development. My favorite tools are <span class="bold">Jade</span> and <span class="bold">LESS</span> together with <span class="bold">Grunt</span>. I'm familiar with different front-end naming methodologies (personally I prefer <span class="bold">BEM with adjustments by Nicolas Gallagher</span>). I have also basic knowledge of <span class="bold">SEO</span> and of user interface design (<span class="bold">UX/UI</span>).</p>
       </div>
     </div>
 
@@ -79,18 +79,34 @@
       <div class="container">
 
         <div class="portfolio__work">
-          <div class="portfolio__img-wrapper  portfolio__img-wrapper--gallery" tabindex="1">
-            <div class="portfolio__img  portfolio__img--gallery" tabindex="1">Gallery containing sliders with images and video</div>
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--db" tabindex="1">
+            <div class="portfolio__img  portfolio__img--db" tabindex="1">Geisha and Maiko Database Project</div>
           </div>
           <div class="portfolio__description">
-            <h2 class="header-h3">Gallery containing sliders with images and video</h2>
-            <p class="text">Responsive gallery which contains sliders with pictures, text and video. The most difficult part here for me were scripts and Youtube API. And the most interesting was the implementation of "lazy loading" for background images.</p>
+            <h2 class="header-h3">Geisha and Maiko Database Project</h2>
+            <p class="text">Web-site, containing data about geiko and maiko Kyoto and other Japanese cities, as well as info about okiya (geisha houses).
+              <br>It was very interesting for me to work with AngularJS and to plan database structure. I've also encountered new tasks, such as setting up HTML5 mode support on server side, which required some Apache configuration.</p>
+            <p class="text">Design and development: Olga Glazunova</p>
             <div class="portfolio__technologies">
-              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">Masonry.js</span><span class="highlight">Lazy load</span><span class="highlight">Youtube API</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">AngularJS</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">Ajax</span><span class="highlight">PHP</span><span class="highlight">Apache</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Bootstrap</span><span class="highlight">Responsive layout</span>
             </div>
-            <a class="btn-small" href="http://olgaglazunova.ru/projects/gallery/" target="_blank">Link to the website</a>
-            <br>
-            <a class="btn-small" href="https://github.com/oaglazunova/Gallery_01" target="_blank">Project repository on Github</a>
+            <a class="btn-small" href="http://geisha-list.com/" target="_blank">Link to the website</a>
+          </div>
+        </div>
+
+
+        <div class="portfolio__work">
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--gallery" tabindex="1">
+            <div class="portfolio__img  portfolio__img--gallery" tabindex="1">kinonovinki.net</div>
+          </div>
+          <div class="portfolio__description">
+            <h2 class="header-h3">kinonovinki.net</h2>
+            <p class="text">The latest movies now playing in theaters: responsive gallery containing carousels with pictures, text and video. The grid is made with Masonry.js, other scripting is mine (carousels, Youtube integration, lazy loading, etc.).</p>
+            <p class="text">Design and development: Olga Glazunova</p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">Masonry.js</span><span class="highlight">Youtube API</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span><span class="highlight">Retina-optimized</span>
+            </div>
+            <a class="btn-small" href="http://kinonovinki.net/" target="_blank">Link to the website</a>
           </div>
         </div>
 
@@ -101,10 +117,10 @@
           <div class="portfolio__description">
             <h2 class="header-h3">Drag-and-Drop UI</h2>
             <p class="text">
-              UI for editing devices' parameters. It was a challenging, but also a very interesting experience - to work with json data and to assign dynamically counters and propertis for UI elements.
+              Interface module, written in JS and jQuery, with Drag&amp;Drop. It allows to display, modify and save information about devices and their properties, taken from json file.
             </p>
             <div class="portfolio__technologies">
-              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">JSON</span><span class="highlight">Ajax</span>
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">jQuery</span><span class="highlight">jQuery UI</span><span class="highlight">JSON</span><span class="highlight">Ajax</span>
             </div>
             <a class="btn-small" href="http://olgaglazunova.ru/projects/VIINSY-UI/" target="_blank">Link to the website</a>
             <br>
@@ -112,16 +128,32 @@
           </div>
         </div>
 
-         <div class="portfolio__work">
+
+        <div class="portfolio__work">
+          <div class="portfolio__img-wrapper  portfolio__img-wrapper--suomi" tabindex="1">
+            <div class="portfolio__img  portfolio__img--suomi" tabindex="1">Taxi to Finland</div>
+          </div>
+          <div class="portfolio__description">
+            <h2 class="header-h3">Taxi to Finland</h2>
+            <p class="text">Landing page for a company organizing short tours and transportation to Finland (since St.Petersburg is very close to Finland such tours are very popular here). The site provides possibility to book a tour or a seat on a bus. I created both the design and the website. I tried to make the page very laconic and simple but at the same time catchy and functional.</p>
+            <p class="text">Design and Development: Olga Glazunova</p>
+            <div class="portfolio__technologies">
+              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Yandex.Maps API</span><span class="highlight">PHP</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
+            </div>
+            <a class="btn-small" href="http://www.advance.spb.ru/" target="_blank">Link to the website</a>
+          </div>
+        </div>
+
+
+        <div class="portfolio__work">
           <div class="portfolio__img-wrapper  portfolio__img-wrapper--tt" tabindex="1">
             <div class="portfolio__img  portfolio__img--tt" tabindex="1">Test task</div>
           </div>
           <div class="portfolio__description">
             <h2 class="header-h3">Training project</h2>
             <p class="text">
-              For practice.
+              Practice makes perfect ;)
             </p>
-            <p class="text">Design: Interesnee<br>Development: Olga Glazunova</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Jade</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
             </div>
@@ -131,22 +163,7 @@
           </div>
         </div>
 
-         <div class="portfolio__work">
-          <div class="portfolio__img-wrapper  portfolio__img-wrapper--suomi" tabindex="1">
-            <div class="portfolio__img  portfolio__img--suomi" tabindex="1">Taxi to Finland</div>
-          </div>
-          <div class="portfolio__description">
-            <h2 class="header-h3">Taxi to Finland</h2>
-            <p class="text">Website for a company organizing short tours and transportation to Finland (Since St.Petersburg is very close to Finland this kind of tours are very popular here). This landing page provides possibility to book a tour or a seat on a bus. I created both the design and the website. I tried to make the page very laconic and simple but at the same time catchy and functional.</p>
-            <p class="text">Design and Development: Olga Glazunova</p>
-            <div class="portfolio__technologies">
-              <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">PHP</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Responsive layout</span>
-            </div>
-            <a class="btn-small" href="http://olgaglazunova.ru/projects/taxi-suomi/" target="_blank">Link to the website</a>
-            <br>
-            <a class="btn-small" href="https://github.com/oaglazunova/Taxi-Suomi" target="_blank">Project repository on Github</a>
-          </div>
-        </div>
+
 
         <div class="portfolio__work">
           <div class="portfolio__img-wrapper  portfolio__img-wrapper--pink" tabindex="1">
@@ -155,7 +172,8 @@
           <div class="portfolio__description">
             <h2 class="header-h3">PINK</h2>
             <p class="text">This is my graduation project for the advanced course of front-end development at HTML Academy: mobile application website with responsive layout for mobile phones, tablets, laptops and desktop PCs. This course was mainly about responsive design and front-end automation tools, and these skills I put into use making the graduation project.</p>
-            <p class="text">Design: Anton Gluhanko<br>Development: Olga Glazunova</p>
+            <p class="text">Design: Anton Gluhanko
+              <br>Development: Olga Glazunova</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span><span class="highlight">Less</span><span class="highlight">Grunt</span><span class="highlight">Google Maps API</span><span class="highlight">Responsive layout</span>
             </div>
@@ -172,7 +190,8 @@
           <div class="portfolio__description">
             <h2 class="header-h3">Technomart</h2>
             <p class="text">My graduation project for the front-end development course at HTML Academy: online shop selling construction tools and materials. I selected the most challenging one of the available psd templates: it contained varied elements interesting in terms of design and implementation, which made work on this project very interesting and fulfilling for me.</p>
-            <p class="text">Design: Anton Gluhanko<br>Development: Olga Glazunova</p>
+            <p class="text">Design: Anton Gluhanko
+              <br>Development: Olga Glazunova</p>
             <div class="portfolio__technologies">
               <span class="highlight">HTML5/CSS3</span><span class="highlight">JavaScript</span>
             </div>
@@ -328,8 +347,11 @@
 
   <footer class="page-footer">
     <div class="container">
-      <p class="page-footer__design">This responsive web site has been designed, developed, and maintained by me. I created it by means of HTML5, CSS3 and JavaScript and optimized for fast loading. Current average speed - 1.4 sec. Galymzhan Abdugalimov, thank you for the photo!</p>
-      <p class="page-footer__copyright">&#169; 2015 Olga Glazunova</p>
+      <p class="page-footer__copyright">&#169; 2016 Olga Glazunova</p>
+    </div>
+    <div class="hidden">
+      <a href="http://www.geisha-list.com/">http://www.geisha-list.com/</a>
+      <a href="http://kinonovinki.net/">http://kinonovinki.net/</a>
     </div>
   </footer>
 

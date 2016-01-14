@@ -644,6 +644,13 @@ body {
 	text-align: justify;
 }
 
+.hidden {
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
 .page-header {
 	height: 100vh;
 	background: #000 url("../img/bkg--small.jpg") no-repeat center center;
@@ -1417,7 +1424,6 @@ body {
 
 .page-header {
 	background: #000 url("../img/bkg--lg.jpg") no-repeat center center;
-	background-attachment: fixed;
 	background-size: cover;
 }
 
